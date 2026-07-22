@@ -4,148 +4,84 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-<title>
-中央刑案公開資料庫｜CENTRAL CRIMINAL DATABASE
-</title>
-
+<title>中央刑案公開資料庫｜Central Criminal Database</title>
 
 <style>
-
-
-*{
-
-box-sizing:border-box;
-
-}
-
 
 body{
 
 margin:0;
-
-background:#080808;
-
-color:#dddddd;
-
+background:#070707;
+color:#ddd;
 font-family:"Microsoft JhengHei",Arial,sans-serif;
+font-size:14px;
 
 }
 
 
-
-/* =====================
-   Header
-===================== */
-
+/* HEADER */
 
 header{
 
 background:#160000;
-
-padding:25px 45px;
-
 border-bottom:1px solid #800;
+padding:30px 50px;
 
 display:flex;
-
 align-items:center;
 
-justify-content:flex-start;
-
 }
-
 
 
 .logo{
 
-width:280px;
-
-height:280px;
-
+width:150px;
+height:150px;
 object-fit:contain;
-
-margin-right:15px;
-
-}
-
-
-
-
-.title-area{
-
-text-align:left;
-
-margin-left:0;
+margin-right:25px;
 
 }
 
 
+.title{
 
-h1{
-
-font-size:46px;
-
-letter-spacing:6px;
-
-margin:0;
-
-white-space:nowrap;
-
-font-weight:bold;
+font-size:38px;
+letter-spacing:8px;
 
 }
-
 
 
 .subtitle{
 
-font-size:22px;
-
-letter-spacing:5px;
-
+margin-top:12px;
+font-size:16px;
+letter-spacing:4px;
 color:#999;
-
-margin-top:8px;
 
 }
 
 
 
-
-
-/* =====================
-   Navigation
-===================== */
-
+/* NAV */
 
 nav{
 
 background:#111;
-
-padding:15px 45px;
-
 border-bottom:1px solid #333;
+padding:15px 50px;
 
 }
-
 
 
 nav a{
 
-color:#ddd;
-
+color:#ccc;
 text-decoration:none;
-
 margin-right:35px;
 
-font-size:15px;
-
 }
-
 
 
 nav a:hover{
@@ -154,231 +90,130 @@ color:white;
 
 }
 
-/* Footer */
-
-footer{
-
-text-align:center;
-
-padding:25px;
-
-border-top:1px solid #333;
-
-background:#111;
-
-color:#777;
-
-font-size:14px;
-
-letter-spacing:2px;
-
-}
 
 
-
-/* =====================
-   Main
-===================== */
-
+/* MAIN */
 
 main{
 
-padding:35px 55px;
+max-width:1200px;
+margin:auto;
+padding:40px;
 
 }
 
 
 
+/* SYSTEM BAR */
 
-
-/* =====================
-   Database Introduction
-===================== */
-
-
-.box{
+.system{
 
 background:#111;
+border:1px solid #444;
 
-border:1px solid #333;
-
-padding:25px;
-
-margin-bottom:35px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
 
 }
 
 
+.system-box{
 
-.box h2{
-
-font-size:22px;
-
-letter-spacing:4px;
-
-margin-top:0;
+padding:18px;
+border-right:1px solid #333;
 
 }
 
 
+.system-title{
 
-
-
-.box p{
-
-font-size:15px;
-
-line-height:1.8;
-
-}
-
-
-
-
-
-/* =====================
-   Case Index
-===================== */
-
-
-.case-section-title{
-
-font-size:26px;
-
-letter-spacing:5px;
-
-margin-bottom:25px;
-
-}
-
-
-
-
-
-.case-list{
-
-display:flex;
-
-flex-direction:column;
-
-gap:18px;
-
-}
-
-
-
-
-
-/* =====================
-   Case Card
-===================== */
-
-
-.case-card{
-
-background:#111;
-
-border:1px solid #333;
-
-padding:22px 25px;
-
-transition:.3s;
-
-}
-
-
-
-.case-card:hover{
-
-border-color:#800;
-
-}
-
-
-
-
-
-.case-header{
-
-border-bottom:1px solid #333;
-
-padding-bottom:12px;
-
-margin-bottom:15px;
-
-}
-
-
-
-
-
-.case-id{
-
-font-size:13px;
-
-letter-spacing:2px;
-
+font-size:12px;
 color:#888;
 
 }
 
 
+.system-value{
 
-.case-title{
-
-font-size:24px;
-
-letter-spacing:3px;
-
+font-size:22px;
 margin-top:8px;
 
 }
 
 
 
-.case-tag{
+/* BOX */
 
-display:inline-block;
+.box{
 
-margin-top:10px;
+background:#101010;
+border:1px solid #333;
+margin-top:25px;
 
-padding:4px 12px;
+}
 
-border:1px solid #900;
 
-color:#ff6666;
+.box-title{
 
-font-size:12px;
+background:#181818;
+border-bottom:1px solid #444;
+
+padding:12px 18px;
+
+font-size:17px;
+letter-spacing:3px;
 
 }
 
 
 
+.box-content{
 
-
-
-/* =====================
-   Case Information
-===================== */
-
-
-.case-info{
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:15px;
+padding:20px;
+line-height:1.8;
 
 }
 
 
 
-.info-box{
+/* NOTICE */
 
-background:#0b0b0b;
+.notice{
 
-border:1px solid #222;
+border-left:3px solid #800;
+background:#0c0c0c;
+
+padding:15px;
+
+}
+
+
+
+/* TABLE */
+
+table{
+
+width:100%;
+border-collapse:collapse;
+
+}
+
+
+th{
+
+background:#181818;
+border:1px solid #444;
+
+padding:10px;
+
+font-size:13px;
+
+}
+
+
+td{
+
+border:1px solid #333;
 
 padding:10px;
 
@@ -386,38 +221,36 @@ padding:10px;
 
 
 
-.info-title{
+td a{
 
-font-size:11px;
+color:#ddd;
+text-decoration:none;
+
+}
+
+
+td a:hover{
+
+color:white;
+
+}
+
+
+
+
+/* STATUS */
+
+.online{
 
 color:#888;
 
-margin-bottom:6px;
-
 }
 
 
+.warning{
 
-.info-content{
-
-font-size:14px;
-
-}
-
-
-
-
-
-
-.case-summary{
-
-margin-top:15px;
-
-font-size:14px;
-
-line-height:1.6;
-
-color:#ccc;
+color:#a00000;
+font-weight:bold;
 
 }
 
@@ -425,50 +258,58 @@ color:#ccc;
 
 
 
-.case-button{
+/* FOOTER */
 
-margin-top:15px;
+footer{
 
-}
+margin-top:50px;
 
+background:#111;
 
+border-top:1px solid #333;
 
-button{
+padding:25px;
 
-background:#650000;
+text-align:center;
 
-border:1px solid #a00000;
-
-color:white;
-
-padding:8px 18px;
-
-cursor:pointer;
-
-font-size:13px;
+color:#777;
 
 }
 
 
 
-button:hover{
+/* MOBILE */
 
-background:#900;
+@media(max-width:800px){
+
+header{
+
+display:block;
 
 }
 
 
+.system{
 
-a{
+grid-template-columns:1fr;
 
-color:white;
+}
+
+
+main{
+
+padding:20px;
+
+}
 
 }
 
 
 </style>
 
+
 </head>
+
 
 
 <body>
@@ -478,21 +319,23 @@ color:white;
 <header>
 
 
-<img class="logo"
-src="c1d92c77-13c3-45cb-8c4d-45a5bb32073c.png">
+<img class="logo" src="c1d92c77-13c3-45cb-8c4d-45a5bb32073c.png">
 
 
+<div>
 
-<div class="title-area">
 
+<div class="title">
 
-<h1>
 中央刑案公開資料庫
-</h1>
+
+</div>
 
 
 <div class="subtitle">
-CENTRAL CRIMINAL DATABASE
+
+CENTRAL CRIMINAL DATABASE SYSTEM
+
 </div>
 
 
@@ -500,6 +343,8 @@ CENTRAL CRIMINAL DATABASE
 
 
 </header>
+
+
 
 
 
@@ -524,7 +369,7 @@ CENTRAL CRIMINAL DATABASE
 
 
 <a href="forum.html">
-調查論壇
+案件交流平台
 </a>
 
 
@@ -542,28 +387,120 @@ CENTRAL CRIMINAL DATABASE
 
 
 
+<div class="system">
+
+
+<div class="system-box">
+
+<div class="system-title">
+資料庫狀態
+</div>
+
+<div class="system-value online">
+ONLINE
+</div>
+
+</div>
+
+
+
+<div class="system-box">
+
+<div class="system-title">
+資料庫版本
+</div>
+
+<div class="system-value">
+v2.6.14
+</div>
+
+</div>
+
+
+
+<div class="system-box">
+
+<div class="system-title">
+公開案件
+</div>
+
+<div class="system-value">
+0004
+</div>
+
+</div>
+
+
+
+<div class="system-box">
+
+<div class="system-title">
+最後更新
+</div>
+
+<div class="system-value">
+2026/07/23
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
 <div class="box">
 
 
-<h2>
-資料庫介紹
-</h2>
+<div class="box-title">
+
+系統公告
+
+</div>
 
 
-<p>
-中央刑案公開資料庫致力於蒐集、整理與保存重大刑事案件相關資訊。
-</p>
+<div class="box-content">
 
 
-<p>
-透過案件紀錄、時間軸、司法文件、證物資料與鑑識報告，
-建立可查詢、可追溯的刑案資訊系統。
-</p>
+<div class="notice">
 
 
-<p>
-讓真相有跡可循，讓歷史不被遺忘。
-</p>
+【資料庫維護通知】
+
+
+<br>
+
+
+2026/07/03
+
+<br><br>
+
+本系統進行歷史案件資料完整性檢查。
+
+<br>
+
+部分案件可能存在版本差異。
+
+<br><br>
+
+
+<span class="warning">
+
+※ 異常資料不代表案件內容錯誤。
+
+</span>
+
+
+</div>
+
+
+</div>
 
 
 </div>
@@ -574,471 +511,257 @@ CENTRAL CRIMINAL DATABASE
 
 
 
-<div class="case-section-title">
-
-案件檔案索引
-
-</div>
 
 
+<div class="box">
 
 
+<div class="box-title">
 
-
-
-<div class="case-list">
-
-
-
-
-
-
-
-<!-- CASE 2014-0721 -->
-
-
-<div class="case-card">
-
-
-<div class="case-header">
-
-
-<div class="case-id">
-CASE-2014-0721
-</div>
-
-
-<div class="case-title">
-雨夜失蹤事件
-</div>
-
-
-<div class="case-tag">
-失蹤人口調查
-</div>
-
+最新案件更新
 
 </div>
 
 
+<div class="box-content">
 
 
-
-<div class="case-info">
-
-
-<div class="info-box">
-
-<div class="info-title">
-案件類型
-</div>
-
-<div class="info-content">
-失蹤案件
-</div>
-
-</div>
+<table>
 
 
+<tr>
 
-<div class="info-box">
-
-<div class="info-title">
-發生日期
-</div>
-
-<div class="info-content">
-2014 / 07 / 21
-</div>
-
-</div>
+<th>
+案件編號
+</th>
 
 
+<th>
+案件名稱
+</th>
 
-<div class="info-box">
 
-<div class="info-title">
+<th>
 案件狀態
-</div>
+</th>
 
-<div class="info-content">
-公開調查資料
-</div>
 
-</div>
+<th>
+更新日期
+</th>
 
 
-</div>
+</tr>
 
 
 
+<tr>
 
-
-<div class="case-summary">
-
-高中生雨夜失蹤事件。
-案件資料包含戶籍、出生證明、家庭關係與失蹤人口紀錄，
-為多年未解案件公開調查資料。
-
-</div>
-
-
-
-
-<div class="case-button">
-
-<a href="case0721.html">
-
-<button>
-查看完整卷宗
-</button>
-
-</a>
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-<!-- CASE 2016-1123 -->
-
-
-<div class="case-card">
-
-
-<div class="case-header">
-
-
-<div class="case-id">
-CASE-2016-1123
-</div>
-
-
-<div class="case-title">
-白橋錄音事件
-</div>
-
-
-<div class="case-tag">
-證物調查
-</div>
-
-
-</div>
-
-
-
-
-
-<div class="case-info">
-
-
-<div class="info-box">
-
-<div class="info-title">
-案件類型
-</div>
-
-<div class="info-content">
-證物調查
-</div>
-
-</div>
-
-
-
-<div class="info-box">
-
-<div class="info-title">
-發生日期
-</div>
-
-<div class="info-content">
-2016 / 11 / 23
-</div>
-
-</div>
-
-
-
-<div class="info-box">
-
-<div class="info-title">
-案件狀態
-</div>
-
-<div class="info-content">
-部分封存
-</div>
-
-</div>
-
-
-</div>
-
-
-
-
-
-<div class="case-summary">
-
-匿名錄音成為案件關鍵證物。
-案件涉及音檔分析、文件紀錄與來源追查。
-
-</div>
-
-
-
-
-<div class="case-button">
-
-<a href="case1123.html">
-
-<button>
-查看完整卷宗
-</button>
-
-</a>
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-<!-- CASE 2017-0908 -->
-
-
-<div class="case-card">
-
-
-<div class="case-header">
-
-
-<div class="case-id">
-CASE-2017-0908
-</div>
-
-
-<div class="case-title">
-第十三號證物
-</div>
-
-
-<div class="case-tag">
-特殊證物調查
-</div>
-
-
-</div>
-
-
-
-
-
-<div class="case-info">
-
-
-<div class="info-box">
-
-<div class="info-title">
-案件類型
-</div>
-
-<div class="info-content">
-特殊證物
-</div>
-
-</div>
-
-
-
-<div class="info-box">
-
-<div class="info-title">
-發生日期
-</div>
-
-<div class="info-content">
-2017 / 09 / 08
-</div>
-
-</div>
-
-
-
-<div class="info-box">
-
-<div class="info-title">
-案件狀態
-</div>
-
-<div class="info-content">
-限制公開
-</div>
-
-</div>
-
-
-</div>
-
-
-
-
-
-<div class="case-summary">
-
-封存特殊證物調查紀錄。
-部分文件因調查需求，目前限制公開。
-
-</div>
-
-
-
-
-<div class="case-button">
-
-<a href="case0908.html">
-
-<button>
-查看完整卷宗
-</button>
-
-</a>
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-<!-- CASE 2018-0419 -->
-
-
-<div class="case-card">
-
-
-<div class="case-header">
-
-
-<div class="case-id">
+<td>
 CASE-2018-0419
-</div>
+</td>
 
 
-<div class="case-title">
-山河公園命案
-</div>
-
-
-<div class="case-tag">
-重大刑事案件
-</div>
-
-
-</div>
-
-
-
-
-
-<div class="case-info">
-
-
-<div class="info-box">
-
-<div class="info-title">
-案件類型
-</div>
-
-<div class="info-content">
-刑事案件
-</div>
-
-</div>
-
-
-
-<div class="info-box">
-
-<div class="info-title">
-發生日期
-</div>
-
-<div class="info-content">
-2018 / 04 / 19
-</div>
-
-</div>
-
-
-
-<div class="info-box">
-
-<div class="info-title">
-案件狀態
-</div>
-
-<div class="info-content">
-公開調查完成
-</div>
-
-</div>
-
-
-</div>
-
-
-
-
-
-<div class="case-summary">
-
-調查記者林子安死亡案件。
-警方公開唯一嫌疑人周柏廷資料，
-案件包含證物、監視影像、證人紀錄與司法文件。
-
-</div>
-
-
-
-
-<div class="case-button">
+<td>
 
 <a href="case0419.html">
 
-<button>
-查看完整卷宗
-</button>
+山河公園命案
 
 </a>
 
+</td>
+
+
+<td>
+公開調查完成
+
+</td>
+
+
+<td>
+2026/07/23
+
+</td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td>
+CASE-2017-0908
+
+</td>
+
+
+<td>
+
+第十三號證物
+
+</td>
+
+
+<td>
+
+限制公開
+
+</td>
+
+
+<td>
+
+2026/07/18
+
+</td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td>
+
+CASE-2016-1123
+
+</td>
+
+
+<td>
+
+白橋錄音事件
+
+</td>
+
+
+<td>
+
+部分封存
+
+</td>
+
+
+<td>
+
+2026/07/10
+
+</td>
+
+
+</tr>
+
+
+
+
+
+<tr>
+
+<td>
+
+CASE-2014-0721
+
+</td>
+
+
+<td>
+
+雨夜失蹤事件
+
+</td>
+
+
+<td>
+
+公開調查資料
+
+</td>
+
+
+<td>
+
+2026/06/30
+
+</td>
+
+
+</tr>
+
+
+</table>
+
+
+</div>
+
+
 </div>
 
 
 
+
+
+
+
+
+
+<div class="box">
+
+
+<div class="box-title">
+
+資料庫說明
+
+</div>
+
+
+<div class="box-content">
+
+
+中央刑案公開資料庫提供公開刑事案件相關資訊查詢。
+
+
+<br><br>
+
+
+收錄內容包含：
+
+<br>
+
+・案件基本資料
+
+<br>
+
+・公開調查紀錄
+
+<br>
+
+・證物資訊
+
+<br>
+
+・相關文件
+
+<br>
+
+・案件時間線
+
+
+<br><br>
+
+
+部分案件資料因涉及司法程序、個人隱私或調查限制，
+可能進行部分遮蔽。
+
+</div>
+
+
 </div>
 
 
@@ -1047,7 +770,57 @@ CASE-2018-0419
 
 
 
+
+
+<div class="box">
+
+
+<div class="box-title">
+
+案件交流平台
+
 </div>
+
+
+<div class="box-content">
+
+
+本平台提供案件資料討論與民間研究交流。
+
+
+<br><br>
+
+
+外部合作平台：
+
+<br><br>
+
+
+<a href="casewatch/index.html">
+
+刑案觀察站 CASE WATCH
+
+</a>
+
+
+<br>
+
+
+<span style="color:#888">
+
+民間刑案資料研究平台
+
+</span>
+
+
+</div>
+
+
+</div>
+
+
+
+
 
 
 
@@ -1062,8 +835,11 @@ CASE-2018-0419
 
 <footer>
 
-
 中央刑案公開資料庫 © 2026
+
+<br>
+
+CENTRAL CRIMINAL DATABASE SYSTEM
 
 </footer>
 
@@ -1072,6 +848,5 @@ CASE-2018-0419
 
 
 </body>
-
 
 </html>
