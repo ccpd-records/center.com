@@ -27,12 +27,10 @@ border-bottom:1px solid #555;
 padding:18px 35px;
 }
 
-
 .system-title{
 font-size:26px;
 letter-spacing:4px;
 }
-
 
 .system-sub{
 margin-top:8px;
@@ -50,14 +48,12 @@ border-bottom:1px solid #333;
 padding:10px 35px;
 }
 
-
 nav a{
 color:#bbb;
 text-decoration:none;
 margin-right:25px;
 font-size:13px;
 }
-
 
 nav a:hover{
 color:white;
@@ -75,19 +71,20 @@ margin:25px auto;
 
 
 
-/* SYSTEM BAR */
+/* SYSTEM */
 
 .system-bar{
 
 border:1px solid #444;
 background:#111;
 padding:10px;
-margin-bottom:15px;
 
 display:flex;
 justify-content:space-between;
 
 font-size:13px;
+
+margin-bottom:15px;
 
 }
 
@@ -116,7 +113,6 @@ letter-spacing:2px;
 }
 
 
-
 .box-content{
 
 padding:12px;
@@ -140,20 +136,20 @@ th{
 background:#151515;
 border:1px solid #444;
 padding:8px;
+
 font-size:13px;
 
 }
-
 
 
 td{
 
 border:1px solid #333;
 padding:8px;
+
 font-size:13px;
 
 }
-
 
 
 td a{
@@ -164,28 +160,9 @@ text-decoration:none;
 }
 
 
-
 td a:hover{
 
 color:white;
-
-}
-
-
-
-/* STATUS */
-
-.warning{
-
-color:#a00000;
-font-weight:bold;
-
-}
-
-
-.green{
-
-color:#888;
 
 }
 
@@ -211,7 +188,6 @@ letter-spacing:2px;
 }
 
 
-
 .thread-info{
 
 margin-top:8px;
@@ -222,6 +198,8 @@ font-size:12px;
 
 
 
+/* POST */
+
 .post{
 
 border:1px solid #333;
@@ -229,7 +207,6 @@ margin-top:10px;
 background:#080808;
 
 }
-
 
 
 .post-head{
@@ -243,14 +220,12 @@ font-size:12px;
 }
 
 
-
 .post-body{
 
 padding:12px;
 line-height:1.8;
 
 }
-
 
 
 .user{
@@ -264,7 +239,6 @@ color:#aaa;
 .deleted{
 
 color:#666;
-
 font-style:italic;
 
 }
@@ -285,13 +259,22 @@ margin-top:40px;
 
 
 
+@media(max-width:800px){
+
+.system-bar{
+display:block;
+}
+
+}
+
 </style>
+
 
 </head>
 
 
-
 <body>
+
 
 
 <header>
@@ -306,6 +289,7 @@ INVESTIGATION DISCUSSION NETWORK / PUBLIC ACCESS SYSTEM
 
 
 </header>
+
 
 
 
@@ -326,7 +310,10 @@ INVESTIGATION DISCUSSION NETWORK / PUBLIC ACCESS SYSTEM
 
 
 
+
+
 <main>
+
 
 
 
@@ -356,34 +343,32 @@ UPDATE : 2026/07/23
 
 
 <div class="box-title">
-公告區
+論壇公告
 </div>
 
 
 <div class="box-content">
 
-
-【系統公告】
+歡迎使用中央刑案公開資料庫附屬調查論壇。
 
 <br><br>
 
-本論壇為中央刑案公開資料庫附屬討論平台。
+本區提供使用者針對公開案件資料進行討論與分析。
 
 <br>
 
-使用者可針對公開案件資料進行分析與討論。
+討論內容不代表官方案件結論。
 
 <br><br>
 
-<span class="warning">
-※ 未經確認之資訊不得作為正式案件資料引用。
-</span>
-
+請勿公開未經確認之個人資料。
 
 </div>
 
 
 </div>
+
+
 
 
 
@@ -412,7 +397,7 @@ UPDATE : 2026/07/23
 </th>
 
 <th>
-討論標題
+標題
 </th>
 
 <th>
@@ -439,7 +424,7 @@ UPDATE : 2026/07/23
 
 <td>
 <a href="#thread1">
-【CASE-2018-0419】山河公園命案資料矛盾分析
+CASE-2018-0419 山河公園命案討論
 </a>
 </td>
 
@@ -468,7 +453,7 @@ UPDATE : 2026/07/23
 
 <td>
 <a href="#thread2">
-E-004案件補充資料異常
+有人注意到第十三號證物嗎？
 </a>
 </td>
 
@@ -497,7 +482,7 @@ E-004案件補充資料異常
 
 <td>
 <a href="#thread3">
-周柏廷身份資料調查紀錄
+周柏廷真的存在嗎？
 </a>
 </td>
 
@@ -532,6 +517,9 @@ E-004案件補充資料異常
 
 
 
+
+<!-- THREAD 1 -->
+
 <div class="box" id="thread1">
 
 
@@ -543,14 +531,11 @@ THREAD : CASE-2018-0419
 <div class="box-content">
 
 
-
 <div class="thread-header">
 
 
 <div class="thread-title">
-
-山河公園命案資料矛盾分析
-
+山河公園命案討論
 </div>
 
 
@@ -562,18 +547,10 @@ THREAD : CASE-2018-0419
 
 日期：2026/07/05
 
-<br>
-
-狀態：
-<span class="warning">
-調查中
-</span>
-
 </div>
 
 
 </div>
-
 
 
 
@@ -591,21 +568,20 @@ THREAD : CASE-2018-0419
 
 <div class="post-body">
 
-查看公開卷宗後發現，
-
-<br>
-
-嫌疑人周柏廷的身份資料並不完整。
+有人重新看過 CASE-2018-0419 的資料嗎？
 
 <br><br>
 
-案件存在，但人物資料似乎不存在。
+我覺得周柏廷這個人有點怪。
+
+<br>
+
+案件資料寫得很完整，但他的背景資料幾乎沒有。
 
 </div>
 
 
 </div>
-
 
 
 
@@ -623,18 +599,20 @@ THREAD : CASE-2018-0419
 
 <div class="post-body">
 
-我比對了2018年的資料版本。
+我也查了一下。
+
+<br><br>
+
+正常來說嫌疑人至少會有一些公開資訊吧？
 
 <br>
 
-沒有找到周柏廷的建立紀錄。
+可是這個名字搜尋出來幾乎都是這個案件。
 
 </div>
 
 
 </div>
-
-
 
 
 
@@ -645,25 +623,18 @@ THREAD : CASE-2018-0419
 
 <div class="post-head">
 
-#003　管理員
+#003　OldFile
 
 </div>
 
 
-<div class="post-body deleted">
+<div class="post-body">
 
-此留言已因違反論壇規範移除。
+有人試過找舊版資料庫嗎？
 
-<br>
+<br><br>
 
-原始內容無法恢復。
-
-</div>
-
-
-</div>
-
-
+我印象中以前的頁面好像不太一樣。
 
 </div>
 
@@ -672,19 +643,26 @@ THREAD : CASE-2018-0419
 
 
 
+</div>
+
+
+</div>
 
 
 
 
 
+
+
+
+
+<!-- THREAD 2 -->
 
 <div class="box" id="thread2">
 
 
 <div class="box-title">
-
-THREAD : EVIDENCE-004
-
+THREAD : CASE-2017-0908
 </div>
 
 
@@ -696,7 +674,7 @@ THREAD : EVIDENCE-004
 
 <div class="thread-title">
 
-E-004案件補充資料異常
+有人注意到第十三號證物嗎？
 
 </div>
 
@@ -718,31 +696,60 @@ E-004案件補充資料異常
 
 
 
+
 <div class="post">
 
 
 <div class="post-head">
 
-#001 EvidenceHunter
+#001　EvidenceHunter
 
 </div>
 
 
 <div class="post-body">
 
-E-004紀錄：
+我在看 CASE-2017-0908。
 
 <br><br>
 
-原始紀錄：存在
+裡面提到「第十三號證物」。
 
 <br>
 
-目前資料：不存在
+但是公開資料完全沒有寫那到底是什麼。
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="post">
+
+
+<div class="post-head">
+
+#002　User_203
+
+</div>
+
+
+<div class="post-body">
+
+我剛剛也去看了。
 
 <br><br>
 
-疑似資料庫同步錯誤。
+不是只有沒有內容，是連附件位置都怪怪的。
+
+<br>
+
+像是原本有東西，後來被拿掉。
 
 </div>
 
@@ -750,6 +757,40 @@ E-004紀錄：
 </div>
 
 
+
+
+
+
+<div class="post">
+
+
+<div class="post-head">
+
+#003　Unknown_77
+
+</div>
+
+
+<div class="post-body">
+
+先不要亂猜啦。
+
+<br><br>
+
+有可能只是公開版本刪減。
+
+<br>
+
+不過確實滿奇怪就是了。
+
+</div>
+
+
+</div>
+
+
+
+
 </div>
 
 
@@ -762,14 +803,14 @@ E-004紀錄：
 
 
 
+
+<!-- THREAD 3 -->
 
 <div class="box" id="thread3">
 
 
 <div class="box-title">
-
 THREAD : PERSON-0419
-
 </div>
 
 
@@ -781,7 +822,7 @@ THREAD : PERSON-0419
 
 <div class="thread-title">
 
-周柏廷身份資料調查紀錄
+周柏廷真的存在嗎？
 
 </div>
 
@@ -803,44 +844,106 @@ THREAD : PERSON-0419
 
 
 
+
 <div class="post">
 
 
 <div class="post-head">
 
-#001 NoName
+#001　NoName
 
 </div>
 
 
 <div class="post-body">
 
-查詢：
-
-<br>
-
-戶籍資料
-
-<br>
-
-教育資料
-
-<br>
-
-工作紀錄
+有人查過周柏廷嗎？
 
 <br><br>
 
-結果：
+我照案件資料上的名字搜尋。
 
 <br>
 
-無完整匹配資料。
+結果除了這個案件，其他什麼都找不到。
 
 </div>
 
 
 </div>
+
+
+
+
+
+
+
+<div class="post">
+
+
+<div class="post-head">
+
+#002　Archive_0419
+
+</div>
+
+
+<div class="post-body">
+
+我有試過查一些公開紀錄。
+
+<br><br>
+
+奇怪的是：
+
+<br>
+
+案件是真的存在。
+
+<br>
+
+可是這個人的資料很不像真的。
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="post">
+
+
+<div class="post-head">
+
+#003　Anonymous
+
+</div>
+
+
+<div class="post-body">
+
+有沒有人想過一件事？
+
+<br><br>
+
+如果這個人不存在。
+
+<br>
+
+那當年的警方到底是在找誰？
+
+</div>
+
+
+</div>
+
+
 
 
 
@@ -861,11 +964,13 @@ THREAD : PERSON-0419
 
 
 
+
 <footer>
 
 中央刑案公開資料庫 © 2026
 
 </footer>
+
 
 
 
