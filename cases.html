@@ -462,5 +462,48 @@ CENTRAL CRIMINAL DATABASE
 
 </footer>
 
+<script>
+
+const searchInput = document.querySelector(".search input");
+const typeSelect = document.querySelector(".search select:nth-child(2)");
+const statusSelect = document.querySelector(".search select:nth-child(3)");
+const cases = document.querySelectorAll(".case-card");
+
+
+function filterCases(){
+
+let keyword = searchInput.value;
+let type = typeSelect.value;
+let status = statusSelect.value;
+
+
+cases.forEach(card=>{
+
+let text = card.innerText;
+
+
+let matchKeyword = text.includes(keyword);
+let matchType = type==="全部類型" || text.includes(type);
+let matchStatus = status==="全部狀態" || text.includes(status);
+
+
+if(matchKeyword && matchType && matchStatus){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+
+});
+
+}
+
+
+searchInput.addEventListener("input",filterCases);
+typeSelect.addEventListener("change",filterCases);
+statusSelect.addEventListener("change",filterCases);
+
+</script>
+
 </body>
 </html>
