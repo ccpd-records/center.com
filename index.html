@@ -25,41 +25,46 @@ font-family:"Microsoft JhengHei",sans-serif;
 }
 
 
-/* 頂部品牌區 */
+
+/* HEADER */
 
 header{
 
 background:#160000;
-padding:35px 50px;
+padding:45px 60px;
 border-bottom:1px solid #800;
 
 }
+
 
 
 .brand{
 
 display:flex;
 align-items:center;
-gap:35px;
+gap:45px;
 
 }
 
 
+
 .logo{
 
-width:280px;
+width:260px;
 height:auto;
 
 }
 
 
+
 .brand-text h1{
 
 margin:0;
-font-size:50px;
+font-size:48px;
 letter-spacing:8px;
 
 }
+
 
 
 .subtitle{
@@ -74,15 +79,17 @@ letter-spacing:5px;
 
 
 
-/* 導覽列 */
+
+/* NAV */
 
 nav{
 
 background:#111;
-padding:20px 50px;
+padding:18px 60px;
 border-bottom:1px solid #333;
 
 }
+
 
 
 nav a{
@@ -90,8 +97,10 @@ nav a{
 color:white;
 text-decoration:none;
 margin-right:35px;
+font-size:15px;
 
 }
+
 
 
 nav a:hover{
@@ -103,13 +112,16 @@ color:#ff4444;
 
 
 
-/* 內容 */
+
+/* MAIN */
 
 main{
 
-padding:40px 50px;
+padding:35px 60px;
 
 }
+
+
 
 
 
@@ -117,10 +129,21 @@ padding:40px 50px;
 
 background:#111;
 border:1px solid #333;
-padding:30px;
-margin-bottom:25px;
+padding:25px;
+margin-bottom:20px;
 
 }
+
+
+
+.box h2{
+
+font-size:22px;
+font-weight:normal;
+margin-top:0;
+
+}
+
 
 
 
@@ -128,8 +151,8 @@ margin-bottom:25px;
 
 background:#090909;
 border:1px solid #333;
-padding:25px;
-margin-top:20px;
+padding:22px;
+margin-top:15px;
 
 }
 
@@ -137,8 +160,27 @@ margin-top:20px;
 
 .case h3{
 
-font-size:26px;
-letter-spacing:3px;
+font-size:20px;
+letter-spacing:2px;
+margin:0 0 15px 0;
+
+}
+
+
+
+.case h2{
+
+font-size:20px;
+font-weight:normal;
+
+}
+
+
+
+.case p,
+.box p{
+
+font-size:14px;
 
 }
 
@@ -152,15 +194,18 @@ color:#ff4444;
 
 
 
+
+
 button{
 
 background:#800;
 border:0;
 color:white;
-padding:12px 25px;
+padding:10px 22px;
 cursor:pointer;
 
 }
+
 
 
 button:hover{
@@ -179,12 +224,17 @@ color:white;
 
 
 
+
+/* FOOTER */
+
 footer{
 
-padding:30px 50px;
+padding:30px;
 color:#666;
+text-align:center;
 
 }
+
 
 
 </style>
@@ -194,9 +244,7 @@ color:#666;
 
 
 
-
 <body>
-
 
 
 
@@ -206,7 +254,10 @@ color:#666;
 <div class="brand">
 
 
-<img src="c1d92c77-13c3-45cb-8c4d-45a5bb32073c.png" class="logo">
+<img 
+src="c1d92c77-13c3-45cb-8c4d-45a5bb32073c.png"
+class="logo"
+>
 
 
 
@@ -231,6 +282,7 @@ CENTRAL CRIMINAL DATABASE
 
 
 </header>
+
 
 
 
@@ -272,14 +324,12 @@ CENTRAL CRIMINAL DATABASE
 
 
 
-
 <div class="box">
 
 
 <h2>
 最新案件
 </h2>
-
 
 
 
@@ -291,9 +341,11 @@ CC-2019-0725
 </h3>
 
 
+
 <h2>
 不存在的嫌疑人
 </h2>
+
 
 
 <p>
@@ -302,11 +354,10 @@ CC-2019-0725
 </p>
 
 
-<p class="status">
 
+<p class="status">
 案件狀態：
 調查中
-
 </p>
 
 
@@ -326,7 +377,6 @@ CC-2019-0725
 </div>
 
 
-
 </div>
 
 
@@ -343,14 +393,16 @@ CC-2019-0725
 </h2>
 
 
+
 <p>
 中央刑案公開資料庫持續整理重大刑事案件資料。
 </p>
 
 
 <p>
-部分案件因調查需求，僅公開部分內容。
+部分案件因調查需求，僅公開部分資訊。
 </p>
+
 
 
 </div>
@@ -373,7 +425,6 @@ CC-2019-0725
 中央刑案公開資料庫 © 2026
 
 </footer>
-
 
 
 
