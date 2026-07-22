@@ -18,13 +18,18 @@
 body{
 
 margin:0;
+
 background:#080808;
-color:#ddd;
+
+color:#dddddd;
+
 font-family:"Microsoft JhengHei",sans-serif;
 
 }
 
 
+
+/* Header */
 
 header{
 
@@ -86,12 +91,17 @@ font-size:24px;
 
 letter-spacing:6px;
 
-color:#aaa;
+color:#999;
 
 margin-top:12px;
 
 }
 
+
+
+
+
+/* Navigation */
 
 
 nav{
@@ -108,14 +118,29 @@ border-bottom:1px solid #333;
 
 nav a{
 
-color:white;
+color:#ddd;
 
 text-decoration:none;
 
 margin-right:35px;
 
+font-size:16px;
+
 }
 
+
+
+nav a:hover{
+
+color:white;
+
+}
+
+
+
+
+
+/* Main */
 
 
 main{
@@ -126,6 +151,11 @@ padding:40px 60px;
 
 
 
+
+
+/* Database intro */
+
+
 .box{
 
 background:#111;
@@ -134,91 +164,275 @@ border:1px solid #333;
 
 padding:30px;
 
+margin-bottom:40px;
+
+}
+
+
+
+
+
+.box h2{
+
+letter-spacing:4px;
+
+}
+
+
+
+
+
+/* Case List */
+
+
+.case-section-title{
+
+font-size:28px;
+
+letter-spacing:5px;
+
 margin-bottom:30px;
 
 }
 
 
 
-h2{
 
-letter-spacing:3px;
+
+.case-list{
+
+display:flex;
+
+flex-direction:column;
+
+gap:25px;
 
 }
 
 
 
-.case{
 
-background:#101010;
+
+.case-card{
+
+
+background:#111;
 
 border:1px solid #333;
 
-padding:25px;
+padding:35px;
 
-margin-bottom:20px;
+transition:.3s;
+
 
 }
 
 
 
-.case h3{
+.case-card:hover{
+
+
+border-color:#800;
+
+
+}
+
+
+
+
+
+.case-header{
+
+
+border-bottom:1px solid #333;
+
+padding-bottom:20px;
+
+margin-bottom:25px;
+
+
+}
+
+
+
+
+
+.case-id{
+
+
+font-size:17px;
 
 letter-spacing:3px;
 
+color:#888;
+
+
 }
 
 
 
-.status{
 
-color:#ff5555;
+
+.case-title{
+
+
+font-size:32px;
+
+letter-spacing:5px;
+
+margin-top:10px;
+
 
 }
+
+
+
+
+.case-tag{
+
+
+display:inline-block;
+
+margin-top:15px;
+
+padding:6px 18px;
+
+border:1px solid #900;
+
+color:#ff6666;
+
+font-size:14px;
+
+
+}
+
+
+
+
+
+.case-info{
+
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:20px;
+
+}
+
+
+
+
+
+.info-box{
+
+
+background:#0b0b0b;
+
+border:1px solid #222;
+
+padding:18px;
+
+
+}
+
+
+
+.info-title{
+
+
+font-size:13px;
+
+color:#888;
+
+margin-bottom:10px;
+
+
+}
+
+
+
+.info-content{
+
+
+font-size:17px;
+
+
+}
+
+
+
+
+
+.case-summary{
+
+
+margin-top:25px;
+
+line-height:1.8;
+
+color:#ccc;
+
+
+}
+
+
+
+
+
+.case-button{
+
+
+margin-top:25px;
+
+
+}
+
 
 
 
 button{
 
-background:#800;
 
-border:0;
+background:#650000;
+
+border:1px solid #a00000;
 
 color:white;
 
-padding:12px 25px;
+padding:12px 28px;
 
 cursor:pointer;
 
+font-size:15px;
+
+
 }
+
+
+
+button:hover{
+
+
+background:#900;
+
+
+}
+
 
 
 
 a{
 
+
 color:white;
 
-}
-
-
-
-footer{
-
-text-align:center;
-
-padding:30px;
-
-color:#666;
 
 }
-
-
-
 </style>
 
-
 </head>
-
 
 
 
@@ -226,9 +440,7 @@ color:#666;
 
 
 
-
 <header>
-
 
 
 <img class="logo"
@@ -253,7 +465,6 @@ CENTRAL CRIMINAL DATABASE
 
 
 </header>
-
 
 
 
@@ -290,9 +501,7 @@ CENTRAL CRIMINAL DATABASE
 
 
 
-
 <main>
-
 
 
 
@@ -330,10 +539,11 @@ CENTRAL CRIMINAL DATABASE
 
 
 
+<div class="case-section-title">
 
-<h2>
 公開案件
-</h2>
+
+</div>
 
 
 
@@ -341,38 +551,119 @@ CENTRAL CRIMINAL DATABASE
 
 
 
+<div class="case-list">
 
-<div class="case">
 
 
-<h3>
+
+
+
+
+<!-- CASE 0721 -->
+
+
+<div class="case-card">
+
+
+<div class="case-header">
+
+
+<div class="case-id">
+
 CASE-2014-0721
-</h3>
+
+</div>
 
 
-<h2>
+<div class="case-title">
+
 雨夜失蹤事件
-</h2>
+
+</div>
 
 
-<p>
-高中生雨夜失蹤案件。
-</p>
+<div class="case-tag">
+
+失蹤人口調查
+
+</div>
 
 
-<p>
-案件狀態：
+</div>
+
+
+
+
+<div class="case-info">
+
+
+<div class="info-box">
+
+<div class="info-title">
+案件類型
+</div>
+
+<div class="info-content">
+失蹤案件
+</div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
+發生日期
+</div>
+
+<div class="info-content">
+2014 / 07 / 21
+</div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
+案件狀態
+</div>
+
+<div class="info-content">
 公開調查資料
-</p>
+</div>
 
+</div>
+
+
+</div>
+
+
+
+
+<div class="case-summary">
+
+高中生雨夜失蹤事件。
+案件資料包含戶籍、出生證明、家庭關係與失蹤人口紀錄，
+為多年未解案件公開調查資料。
+
+</div>
+
+
+
+<div class="case-button">
 
 <a href="case0721.html">
 
 <button>
-查看案件
+查看完整卷宗
 </button>
 
 </a>
+
+</div>
 
 
 </div>
@@ -384,37 +675,111 @@ CASE-2014-0721
 
 
 
-<div class="case">
+<!-- CASE 1123 -->
 
 
-<h3>
+<div class="case-card">
+
+
+<div class="case-header">
+
+
+<div class="case-id">
+
 CASE-2016-1123
-</h3>
+
+</div>
 
 
-<h2>
+<div class="case-title">
+
 白橋錄音事件
-</h2>
+
+</div>
 
 
-<p>
-匿名錄音成為案件關鍵證物。
-</p>
+<div class="case-tag">
+
+調查關聯模組
+
+</div>
 
 
-<p>
-案件狀態：
+</div>
+
+
+
+
+<div class="case-info">
+
+
+<div class="info-box">
+
+<div class="info-title">
+案件類型
+</div>
+
+<div class="info-content">
+證物調查
+</div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
+發生日期
+</div>
+
+<div class="info-content">
+2016 / 11 / 23
+</div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
+案件狀態
+</div>
+
+<div class="info-content">
 部分封存
-</p>
+</div>
 
+</div>
+
+
+</div>
+
+
+
+
+<div class="case-summary">
+
+匿名錄音成為案件關鍵證物。
+透過音檔 metadata、聲音分析與隱藏資料，
+可取得案件相關線索。
+
+</div>
+
+
+
+<div class="case-button">
 
 <a href="case1123.html">
 
 <button>
-查看案件
+查看完整卷宗
 </button>
 
 </a>
+
+</div>
 
 
 </div>
@@ -426,37 +791,110 @@ CASE-2016-1123
 
 
 
-<div class="case">
+<!-- CASE 0908 -->
 
 
-<h3>
+<div class="case-card">
+
+
+<div class="case-header">
+
+
+<div class="case-id">
+
 CASE-2017-0908
-</h3>
+
+</div>
 
 
-<h2>
+<div class="case-title">
+
 第十三號證物
-</h2>
+
+</div>
 
 
-<p>
-特殊封存證物調查紀錄。
-</p>
+<div class="case-tag">
+
+特殊證物調查
+
+</div>
 
 
-<p>
-案件狀態：
+</div>
+
+
+
+
+<div class="case-info">
+
+
+<div class="info-box">
+
+<div class="info-title">
+案件類型
+</div>
+
+<div class="info-content">
+特殊證物
+</div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
+發生日期
+</div>
+
+<div class="info-content">
+2017 / 09 / 08
+</div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
+案件狀態
+</div>
+
+<div class="info-content">
 限制公開
-</p>
+</div>
 
+</div>
+
+
+</div>
+
+
+
+
+<div class="case-summary">
+
+封存特殊證物調查紀錄。
+文件中疑似存在中央刑案資料庫內部身份完整性測試資料。
+
+</div>
+
+
+
+<div class="case-button">
 
 <a href="case0908.html">
 
 <button>
-查看案件
+查看完整卷宗
 </button>
 
 </a>
+
+</div>
 
 
 </div>
@@ -468,49 +906,128 @@ CASE-2017-0908
 
 
 
-<div class="case">
+<!-- CASE 0419 -->
 
 
-<h3>
+<div class="case-card">
+
+
+<div class="case-header">
+
+
+<div class="case-id">
+
 CASE-2018-0419
-</h3>
+
+</div>
 
 
-<h2>
+<div class="case-title">
+
 山河公園命案
-</h2>
+
+</div>
 
 
-<p>
-調查記者林子安死亡案件。
-</p>
+<div class="case-tag">
+
+主線案件
+
+</div>
 
 
-<p class="status">
-案件狀態：
+</div>
+
+
+
+
+<div class="case-info">
+
+
+<div class="info-box">
+
+<div class="info-title">
+案件類型
+</div>
+
+<div class="info-content">
+重大刑事案件
+</div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
+發生日期
+</div>
+
+<div class="info-content">
+2018 / 04 / 19
+</div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
+案件狀態
+</div>
+
+<div class="info-content">
 公開調查完成
-</p>
+</div>
 
+</div>
+
+
+</div>
+
+
+
+
+<div class="case-summary">
+
+調查記者林子安死亡案件。
+警方公開唯一嫌疑人周柏廷資料，
+案件涉及身份完整性驗證與多重身份關聯。
+
+</div>
+
+
+
+<div class="case-button">
 
 <a href="case0419.html">
 
 <button>
-查看案件
+查看完整卷宗
 </button>
 
 </a>
 
+</div>
+
 
 </div>
 
+
+
+
+
+
+
+</div>
 
 
 
 
 
 </main>
-
-
 
 
 
@@ -527,7 +1044,7 @@ CASE-2018-0419
 
 
 
-
 </body>
+
 
 </html>
