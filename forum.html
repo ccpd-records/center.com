@@ -8,256 +8,174 @@
 
 <title>調查論壇｜中央刑案公開資料庫</title>
 
-
 <style>
 
 body{
 margin:0;
-background:#080808;
-color:#ddd;
-font-family:"Microsoft JhengHei",sans-serif;
+background:#050505;
+color:#ccc;
+font-family:"Microsoft JhengHei",Arial,sans-serif;
+font-size:14px;
 }
 
 
-/* Header */
+/* HEADER */
 
 header{
-
-background:#160000;
-padding:30px 50px;
-border-bottom:1px solid #800;
-
+background:#101010;
+border-bottom:1px solid #555;
+padding:18px 35px;
 }
 
 
-.logo-title{
-
-font-size:36px;
-letter-spacing:6px;
-
-}
-
-
-.subtitle{
-
-margin-top:10px;
-font-size:18px;
+.system-title{
+font-size:26px;
 letter-spacing:4px;
-color:#999;
+}
 
+
+.system-sub{
+margin-top:8px;
+color:#888;
+font-size:13px;
 }
 
 
 
-/* Navigation */
+/* NAV */
 
 nav{
-
-background:#111;
-padding:18px 50px;
+background:#090909;
 border-bottom:1px solid #333;
-
+padding:10px 35px;
 }
 
 
 nav a{
-
-color:#ddd;
+color:#bbb;
 text-decoration:none;
-margin-right:35px;
-
+margin-right:25px;
+font-size:13px;
 }
 
 
 nav a:hover{
-
 color:white;
-
 }
 
 
 
-/* Main */
+/* MAIN */
 
 main{
+width:1100px;
+max-width:90%;
+margin:25px auto;
+}
 
-max-width:1200px;
-margin:auto;
-padding:45px;
+
+
+/* SYSTEM BAR */
+
+.system-bar{
+
+border:1px solid #444;
+background:#111;
+padding:10px;
+margin-bottom:15px;
+
+display:flex;
+justify-content:space-between;
+
+font-size:13px;
 
 }
 
 
 
-/* Box */
+/* BOX */
 
 .box{
 
-background:#111;
-border:1px solid #333;
-padding:30px;
-margin-bottom:35px;
+border:1px solid #444;
+background:#090909;
+margin-bottom:18px;
 
 }
 
 
-.box h2{
+.box-title{
 
-margin-top:0;
-letter-spacing:4px;
+background:#151515;
+border-bottom:1px solid #444;
+padding:8px 12px;
 
-}
-
-
-
-/* Forum info */
-
-.forum-status{
-
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
+font-weight:bold;
+letter-spacing:2px;
 
 }
 
 
 
-.status-box{
+.box-content{
 
-background:#0b0b0b;
-border:1px solid #222;
-padding:20px;
+padding:12px;
 
 }
 
 
-.status-title{
 
-color:#888;
+/* TABLE */
+
+table{
+
+width:100%;
+border-collapse:collapse;
+
+}
+
+
+th{
+
+background:#151515;
+border:1px solid #444;
+padding:8px;
 font-size:13px;
-margin-bottom:8px;
 
 }
 
 
 
-.status-value{
+td{
 
-font-size:20px;
-
-}
-
-
-
-/* Category */
-
-.category{
-
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:20px;
-
-}
-
-
-.category-card{
-
-background:#0b0b0b;
-border:1px solid #222;
-padding:20px;
-
-}
-
-
-.category-card:hover{
-
-border-color:#800;
-
-}
-
-
-.category-title{
-
-font-size:20px;
-margin-bottom:10px;
-
-}
-
-
-.category-desc{
-
-color:#999;
+border:1px solid #333;
+padding:8px;
+font-size:13px;
 
 }
 
 
 
-/* Thread */
+td a{
 
-.thread{
-
-background:#0b0b0b;
-border:1px solid #222;
-padding:25px;
-margin-top:20px;
-
-}
-
-
-.thread:hover{
-
-border-color:#800;
+color:#ddd;
+text-decoration:none;
 
 }
 
 
 
-.thread-title{
+td a:hover{
 
-font-size:22px;
 color:white;
 
 }
 
 
 
-.thread-info{
+/* STATUS */
 
-color:#888;
-font-size:14px;
-margin-top:12px;
-
-}
-
-
-
-.tag{
-
-display:inline-block;
-background:#500;
-padding:5px 10px;
-font-size:12px;
-margin-top:15px;
-margin-right:10px;
-
-}
-
-
-
-/* Post */
-
-.post{
-
-background:#111;
-border:1px solid #222;
-padding:20px;
-margin-top:15px;
-
-}
-
-
-
-.user{
+.warning{
 
 color:#a00000;
 font-weight:bold;
@@ -265,88 +183,109 @@ font-weight:bold;
 }
 
 
-.post-date{
+.green{
 
-font-size:13px;
-color:#777;
-
-}
-
-
-.post-number{
-
-color:#555;
+color:#888;
 
 }
 
 
 
-/* Deleted */
+/* THREAD */
+
+.thread-header{
+
+border:1px solid #444;
+background:#101010;
+padding:12px;
+
+}
+
+
+
+.thread-title{
+
+font-size:16px;
+letter-spacing:2px;
+
+}
+
+
+
+.thread-info{
+
+margin-top:8px;
+color:#888;
+font-size:12px;
+
+}
+
+
+
+.post{
+
+border:1px solid #333;
+margin-top:10px;
+background:#080808;
+
+}
+
+
+
+.post-head{
+
+background:#111;
+border-bottom:1px solid #333;
+padding:8px;
+
+font-size:12px;
+
+}
+
+
+
+.post-body{
+
+padding:12px;
+line-height:1.8;
+
+}
+
+
+
+.user{
+
+color:#aaa;
+
+}
+
+
 
 .deleted{
 
-color:#777;
+color:#666;
+
 font-style:italic;
 
-border-left:2px solid #800;
-padding-left:15px;
-
 }
 
 
 
-/* Button */
-
-button{
-
-background:#650000;
-border:1px solid #a00000;
-color:white;
-padding:12px 30px;
-cursor:pointer;
-
-}
-
-
-button:hover{
-
-background:#900;
-
-}
-
-
-
-/* Footer */
+/* FOOTER */
 
 footer{
 
 text-align:center;
-padding:25px;
-background:#111;
 border-top:1px solid #333;
-color:#777;
+padding:20px;
+color:#666;
+margin-top:40px;
 
 }
 
-
-
-/* Mobile */
-
-@media(max-width:800px){
-
-.forum-status,
-.category{
-
-grid-template-columns:1fr;
-
-}
-
-
-}
 
 
 </style>
-
 
 </head>
 
@@ -355,22 +294,18 @@ grid-template-columns:1fr;
 <body>
 
 
-
 <header>
 
-
-<div class="logo-title">
+<div class="system-title">
 中央刑案公開資料庫
 </div>
 
-
-<div class="subtitle">
-INVESTIGATION FORUM SYSTEM
+<div class="system-sub">
+INVESTIGATION DISCUSSION NETWORK / PUBLIC ACCESS SYSTEM
 </div>
 
 
 </header>
-
 
 
 
@@ -391,69 +326,58 @@ INVESTIGATION FORUM SYSTEM
 
 
 
-
 <main>
 
 
 
+<div class="system-bar">
+
+<div>
+SYSTEM : ONLINE
+</div>
+
+<div>
+SERVER : CCD-FORUM-02
+</div>
+
+<div>
+UPDATE : 2026/07/23
+</div>
+
+</div>
+
+
+
+
+
 
 
 <div class="box">
 
 
-<h2>
-論壇資訊
-</h2>
-
-
-<div class="forum-status">
-
-
-<div class="status-box">
-
-<div class="status-title">
-論壇狀態
-</div>
-
-正常運作
-
+<div class="box-title">
+公告區
 </div>
 
 
-
-<div class="status-box">
-
-<div class="status-title">
-今日文章
-</div>
-
-127
-
-</div>
+<div class="box-content">
 
 
+【系統公告】
 
-<div class="status-box">
+<br><br>
 
-<div class="status-title">
-線上使用者
-</div>
+本論壇為中央刑案公開資料庫附屬討論平台。
 
-034
+<br>
 
-</div>
+使用者可針對公開案件資料進行分析與討論。
 
+<br><br>
 
-
-<div class="status-box">
-
-<div class="status-title">
-最新同步
-</div>
-
-2026/07/23
-
-</div>
+<span class="warning">
+※ 未經確認之資訊不得作為正式案件資料引用。
+</span>
 
 
 </div>
@@ -470,91 +394,134 @@ INVESTIGATION FORUM SYSTEM
 <div class="box">
 
 
-<h2>
-論壇版區
-</h2>
-
-
-
-<div class="category">
-
-
-<div class="category-card">
-
-<div class="category-title">
-案件討論區
-</div>
-
-<div class="category-desc">
-討論公開案件資料、調查方向與案件分析。
-</div>
-
+<div class="box-title">
+討論列表
 </div>
 
 
+<div class="box-content">
 
 
-<div class="category-card">
+<table>
 
-<div class="category-title">
-證物分析區
+
+<tr>
+
+<th>
+編號
+</th>
+
+<th>
+討論標題
+</th>
+
+<th>
+分類
+</th>
+
+<th>
+回覆
+</th>
+
+<th>
+最後更新
+</th>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+001
+</td>
+
+<td>
+<a href="#thread1">
+【CASE-2018-0419】山河公園命案資料矛盾分析
+</a>
+</td>
+
+<td>
+案件討論
+</td>
+
+<td>
+56
+</td>
+
+<td>
+2026/07/08
+</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>
+002
+</td>
+
+<td>
+<a href="#thread2">
+E-004案件補充資料異常
+</a>
+</td>
+
+<td>
+證物分析
+</td>
+
+<td>
+31
+</td>
+
+<td>
+2026/07/06
+</td>
+
+</tr>
+
+
+
+
+<tr>
+
+<td>
+003
+</td>
+
+<td>
+<a href="#thread3">
+周柏廷身份資料調查紀錄
+</a>
+</td>
+
+<td>
+人物調查
+</td>
+
+<td>
+21
+</td>
+
+<td>
+2026/07/08
+</td>
+
+</tr>
+
+
+
+</table>
+
+
 </div>
 
-<div class="category-desc">
-針對公開證物、紀錄文件進行比對。
-</div>
-
-</div>
-
-
-
-
-
-<div class="category-card">
-
-<div class="category-title">
-人物調查區
-</div>
-
-<div class="category-desc">
-分析案件相關人物背景與身份資料。
-</div>
-
-</div>
-
-
-
-
-
-<div class="category-card">
-
-<div class="category-title">
-懸案交流區
-</div>
-
-<div class="category-desc">
-討論未解案件與未知線索。
-</div>
-
-</div>
-
-
-
-<div class="category-card">
-
-<div class="category-title">
-資料異常回報
-</div>
-
-<div class="category-desc">
-回報資料庫錯誤與異常紀錄。
-</div>
-
-</div>
-
-
-</div>
-
 
 </div>
 
@@ -565,75 +532,48 @@ INVESTIGATION FORUM SYSTEM
 
 
 
-<div class="box">
+<div class="box" id="thread1">
 
 
-<h2>
-熱門討論串
-</h2>
+<div class="box-title">
+THREAD : CASE-2018-0419
+</div>
+
+
+<div class="box-content">
 
 
 
-
-
-<div class="thread">
+<div class="thread-header">
 
 
 <div class="thread-title">
 
-🔥 CASE-2018-0419 山河公園命案討論串
+山河公園命案資料矛盾分析
 
 </div>
 
 
 <div class="thread-info">
 
-作者：Archive_0419
+發表者：Archive_0419
 
-發表時間：2026/07/05
+<br>
 
-回覆數：56
+日期：2026/07/05
 
-</div>
+<br>
 
-
-<div>
-
-<span class="tag">
-CASE-2018-0419
-</span>
-
-<span class="tag">
-熱門
+狀態：
+<span class="warning">
+調查中
 </span>
 
 </div>
 
 
-
-<div class="post">
-
-
-<div class="user">
-#001 User_203
 </div>
 
-
-<div class="post-date">
-2026/07/05 21:13
-</div>
-
-
-<p>
-
-我重新查看了公開卷宗。
-
-周柏廷的資料不像正常案件嫌疑人。
-
-</p>
-
-
-</div>
 
 
 
@@ -642,23 +582,54 @@ CASE-2018-0419
 <div class="post">
 
 
-<div class="user">
-#002 Unknown_77
+<div class="post-head">
+
+#001　User_203
+
 </div>
 
 
-<div class="post-date">
-2026/07/05 23:40
+<div class="post-body">
+
+查看公開卷宗後發現，
+
+<br>
+
+嫌疑人周柏廷的身份資料並不完整。
+
+<br><br>
+
+案件存在，但人物資料似乎不存在。
+
 </div>
 
 
-<p>
+</div>
+
+
+
+
+
+
+<div class="post">
+
+
+<div class="post-head">
+
+#002　Unknown_77
+
+</div>
+
+
+<div class="post-body">
 
 我比對了2018年的資料版本。
 
-沒有找到他的建立紀錄。
+<br>
 
-</p>
+沒有找到周柏廷的建立紀錄。
+
+</div>
 
 
 </div>
@@ -667,14 +638,23 @@ CASE-2018-0419
 
 
 
+
+
 <div class="post">
 
 
-<div class="deleted">
+<div class="post-head">
 
-#003
+#003　管理員
 
-此留言已刪除。
+</div>
+
+
+<div class="post-body deleted">
+
+此留言已因違反論壇規範移除。
+
+<br>
 
 原始內容無法恢復。
 
@@ -688,6 +668,7 @@ CASE-2018-0419
 </div>
 
 
+</div>
 
 
 
@@ -695,44 +676,61 @@ CASE-2018-0419
 
 
 
-<div class="thread">
+
+
+<div class="box" id="thread2">
+
+
+<div class="box-title">
+
+THREAD : EVIDENCE-004
+
+</div>
+
+
+<div class="box-content">
+
+
+<div class="thread-header">
 
 
 <div class="thread-title">
 
-[證物分析] E-004案件補充資料疑點
+E-004案件補充資料異常
 
 </div>
 
 
 <div class="thread-info">
 
-作者：EvidenceHunter
+發表者：EvidenceHunter
 
-發表時間：2026/07/06
+<br>
 
-回覆數：31
+日期：2026/07/06
+
+</div>
+
 
 </div>
 
 
 
-<span class="tag">
-E-004
-</span>
 
 
 <div class="post">
 
 
-<div class="user">
+<div class="post-head">
+
 #001 EvidenceHunter
+
 </div>
 
 
-<p>
+<div class="post-body">
 
-E-004顯示：
+E-004紀錄：
 
 <br><br>
 
@@ -744,11 +742,15 @@ E-004顯示：
 
 <br><br>
 
-這不像刪除。
+疑似資料庫同步錯誤。
 
-比較像資料從未建立。
+</div>
 
-</p>
+
+</div>
+
+
+</div>
 
 
 </div>
@@ -756,54 +758,64 @@ E-004顯示：
 
 
 
+
+
+
+
+
+<div class="box" id="thread3">
+
+
+<div class="box-title">
+
+THREAD : PERSON-0419
+
 </div>
 
 
+<div class="box-content">
 
 
-
-
-
-
-
-<div class="thread">
+<div class="thread-header">
 
 
 <div class="thread-title">
 
-[人物調查] 周柏廷身份資料追查
+周柏廷身份資料調查紀錄
 
 </div>
 
 
 <div class="thread-info">
 
-作者：NoName
+發表者：NoName
 
-發表時間：2026/07/08
+<br>
 
-回覆數：21
+日期：2026/07/08
 
 </div>
 
 
-<span class="tag">
-人物調查
-</span>
+</div>
+
+
 
 
 
 <div class="post">
 
 
-<div class="user">
+<div class="post-head">
+
 #001 NoName
+
 </div>
 
 
-<p>
+<div class="post-body">
 
-已查詢：
+查詢：
 
 <br>
 
@@ -811,7 +823,7 @@ E-004顯示：
 
 <br>
 
-教育紀錄
+教育資料
 
 <br>
 
@@ -819,32 +831,13 @@ E-004顯示：
 
 <br><br>
 
-沒有任何完整結果。
+結果：
 
-</p>
+<br>
 
+無完整匹配資料。
 
 </div>
-
-
-
-
-
-<div class="post">
-
-
-<div class="user">
-#002 System_Error
-</div>
-
-
-<p>
-
-此留言包含未驗證資訊。
-
-部分內容已被系統隱藏。
-
-</p>
 
 
 </div>
@@ -854,55 +847,7 @@ E-004顯示：
 </div>
 
 
-
-
-
-
 </div>
-
-
-
-
-
-
-
-<div class="box">
-
-
-<h2>
-論壇公告
-</h2>
-
-
-<p>
-
-請使用者遵守論壇規範。
-
-<br><br>
-
-公開案件資料僅供研究與討論。
-
-<br><br>
-
-禁止散播未經確認之個人資訊。
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-<a href="index.html">
-
-<button>
-返回首頁
-</button>
-
-</a>
 
 
 
@@ -915,12 +860,12 @@ E-004顯示：
 
 
 
+
 <footer>
 
 中央刑案公開資料庫 © 2026
 
 </footer>
-
 
 
 
