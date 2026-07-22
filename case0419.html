@@ -4,82 +4,79 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-CC-2018-0419 山河公園命案｜中央刑案公開資料庫
-</title>
-
+<title>CASE-2018-0419｜山河公園命案｜中央刑案公開資料庫</title>
 
 <style>
 
-
 body{
-
 margin:0;
 background:#080808;
 color:#ddd;
 font-family:"Microsoft JhengHei",sans-serif;
-
 }
-
 
 
 header{
 
 background:#160000;
-padding:40px 60px;
+padding:35px 50px;
 border-bottom:1px solid #800;
 
 }
 
 
+.logo-title{
 
-h1{
-
-letter-spacing:5px;
-margin:0;
+font-size:36px;
+letter-spacing:6px;
 
 }
-
 
 
 .subtitle{
 
+margin-top:10px;
 color:#999;
-letter-spacing:3px;
+font-size:18px;
+letter-spacing:4px;
 
 }
-
 
 
 nav{
 
 background:#111;
-padding:18px 60px;
+padding:18px 50px;
 border-bottom:1px solid #333;
 
 }
 
 
-
 nav a{
 
-color:white;
+color:#ddd;
 text-decoration:none;
 margin-right:35px;
 
 }
 
 
+nav a:hover{
 
-main{
-
-padding:40px 60px;
+color:white;
 
 }
 
+
+main{
+
+max-width:1200px;
+margin:auto;
+padding:45px;
+
+}
 
 
 .box{
@@ -87,34 +84,54 @@ padding:40px 60px;
 background:#111;
 border:1px solid #333;
 padding:30px;
-margin-bottom:25px;
+margin-bottom:35px;
+
+}
+
+
+.box h2{
+
+margin-top:0;
+letter-spacing:4px;
+color:#eee;
 
 }
 
 
 
-.box h2{
+.case-number{
 
-font-weight:normal;
+color:#888;
 letter-spacing:3px;
 
 }
 
 
 
-.case-info{
+.grid{
 
-background:#090909;
-border:1px solid #333;
-padding:25px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-top:25px;
 
 }
 
 
+.item{
 
-.status{
+background:#0b0b0b;
+border:1px solid #222;
+padding:18px;
 
-color:#ff4444;
+}
+
+
+.item-title{
+
+font-size:13px;
+color:#888;
+margin-bottom:8px;
 
 }
 
@@ -122,69 +139,86 @@ color:#ff4444;
 
 .timeline{
 
-border-left:2px solid #555;
+border-left:2px solid #800;
 padding-left:25px;
 
 }
 
 
-
-.timeline p{
+.event{
 
 margin-bottom:25px;
 
 }
 
 
+.date{
 
-.image-box{
+color:#a00000;
+font-weight:bold;
 
-background:#090909;
-border:1px solid #333;
+}
+
+
+.evidence{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+
+}
+
+
+
+.card{
+
+background:#0b0b0b;
+border:1px solid #222;
 padding:20px;
-margin-top:20px;
-text-align:center;
+
+}
+
+
+.card:hover{
+
+border-color:#800;
+
+}
+
+
+.person{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
 
 }
 
 
 
-.image-box img{
+.status{
 
-max-width:600px;
-width:80%;
-border:1px solid #555;
-
-}
-
-
-
-.image-caption{
-
-color:#999;
-font-size:14px;
+color:#900;
+font-weight:bold;
 
 }
-
-
-
-.link-box a{
-
-display:block;
-color:white;
-padding:10px 0;
-
-}
-
 
 
 button{
 
-background:#800;
-border:0;
+background:#650000;
+border:1px solid #a00000;
 color:white;
-padding:12px 25px;
+padding:12px 30px;
 cursor:pointer;
+font-size:15px;
+
+}
+
+
+button:hover{
+
+background:#900;
 
 }
 
@@ -193,75 +227,60 @@ cursor:pointer;
 footer{
 
 text-align:center;
-color:#666;
-padding:30px;
+padding:25px;
+background:#111;
+border-top:1px solid #333;
+color:#777;
 
 }
 
 
+@media(max-width:800px){
+
+.grid,
+.evidence,
+.person{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
 
 </style>
 
-
 </head>
-
-
 
 
 <body>
 
 
-
-
 <header>
 
+<div class="logo-title">
+中央刑案公開資料庫
+</div>
 
-<h1>
-CC-2018-0419
-</h1>
-
-
-<p class="subtitle">
-山河公園命案
-</p>
-
+<div class="subtitle">
+CASE FILE SYSTEM / PUBLIC RECORD
+</div>
 
 </header>
 
 
 
-
-
-
-
 <nav>
 
+<a href="index.html">首頁</a>
 
-<a href="index.html">
-首頁
-</a>
+<a href="cases.html">案件資料庫</a>
 
+<a href="missing.html">懸案檔案</a>
 
-<a href="cases.html">
-案件資料庫
-</a>
-
-
-<a href="missing.html">
-懸案檔案
-</a>
-
-
-<a href="forum.html">
-調查論壇
-</a>
-
+<a href="forum.html">調查論壇</a>
 
 </nav>
-
-
-
-
 
 
 
@@ -269,6 +288,26 @@ CC-2018-0419
 
 
 
+<div class="box">
+
+
+<div class="case-number">
+CASE-2018-0419
+</div>
+
+
+<h1>
+山河公園命案
+</h1>
+
+
+<p>
+2018年4月19日晚間，山河公園發生重大刑事案件。
+警方於現場發現一名死亡個體，後續調查公開唯一嫌疑人周柏廷相關資料。
+</p>
+
+
+</div>
 
 
 
@@ -281,40 +320,54 @@ CC-2018-0419
 </h2>
 
 
-
-<div class="case-info">
-
-
-<p>
-案件編號：
-CC-2018-0419
-</p>
+<div class="grid">
 
 
-<p>
-案件名稱：
-山河公園命案
-</p>
+<div class="item">
 
+<div class="item-title">
+案件類型
+</div>
 
-<p>
-案件類型：
 重大刑事案件
-</p>
+
+</div>
 
 
-<p>
-案件狀態：
+
+<div class="item">
+
+<div class="item-title">
+發生日期
+</div>
+
+2018/04/19
+
+</div>
+
+
+
+<div class="item">
+
+<div class="item-title">
+案件狀態
+</div>
+
+<span class="status">
 公開調查完成
-</p>
+</span>
+
+</div>
 
 
-<p>
-公開時間：
-2026年
-</p>
 
+<div class="item">
 
+<div class="item-title">
+主要嫌疑人
+</div>
+
+周柏廷
 
 </div>
 
@@ -322,7 +375,7 @@ CC-2018-0419
 </div>
 
 
-
+</div>
 
 
 
@@ -333,232 +386,70 @@ CC-2018-0419
 
 
 <h2>
-案件摘要
+調查時間線
 </h2>
-
-
-
-<p>
-2018年4月19日晚上9時42分，
-山河公園發生命案。
-</p>
-
-
-<p>
-警方接獲報案後抵達現場，
-發現調查記者林子安死亡。
-</p>
-
-
-<p>
-現場遺留個人物品、錄音設備與文件資料。
-</p>
-
-
-<p>
-警方經兩年調查後，
-公布唯一嫌疑人。
-</p>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="box">
-
-
-<h2>
-被害人資料
-</h2>
-
-
-<p>
-姓名：
-林子安
-</p>
-
-
-<p>
-性別：
-男性
-</p>
-
-
-<p>
-年齡：
-34歲
-</p>
-
-
-<p>
-職業：
-調查記者
-</p>
-
-
-
-<div class="image-box">
-
-
-<img src="images/case0419/victim.jpg">
-
-
-<p class="image-caption">
-被害人照片
-<br>
-檔案：
-victim.jpg
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="box">
-
-
-<h2>
-案發現場
-</h2>
-
-
-
-<p>
-地點：
-山河公園
-</p>
-
-
-<p>
-時間：
-2018年4月19日 21:42
-</p>
-
-
-
-<div class="image-box">
-
-
-<img src="images/case0419/crime_scene.jpg">
-
-
-<p class="image-caption">
-案發現場紀錄照片
-<br>
-檔案：
-crime_scene.jpg
-</p>
-
-
-</div>
-
-
-
-
-</div>
-
-
-
-
-
-
-
-
-
-<div class="box">
-
-
-<h2>
-案件時間軸
-</h2>
-
 
 
 <div class="timeline">
 
 
-<p>
+<div class="event">
 
-2018/04/19 21:42
+<div class="date">
+2018/04/19 21:14
+</div>
 
-<br>
+民眾通報山河公園東側區域發現異常。
 
-山河公園發生命案。
-
-</p>
+</div>
 
 
 
-<p>
+<div class="event">
 
+<div class="date">
+2018/04/19 22:03
+</div>
+
+警方抵達現場並封鎖調查。
+
+</div>
+
+
+
+<div class="event">
+
+<div class="date">
 2018/04/20
+</div>
 
-<br>
+確認死者身份，開始進行相關人員調查。
 
-警方成立專案調查。
-
-</p>
-
-
-
-<p>
-
-2018 - 2020
-
-<br>
-
-警方進行證物分析、
-目擊者調查與嫌疑人追查。
-
-</p>
+</div>
 
 
 
-<p>
+<div class="event">
 
-2020
+<div class="date">
+2018/05/02
+</div>
 
-<br>
+警方公布主要嫌疑人周柏廷資料。
 
-警方公布唯一嫌疑人：
-
-<br>
-
-周柏廷。
-
-</p>
+</div>
 
 
 
-<p>
+<div class="event">
 
-2026
+<div class="date">
+2018/06/15
+</div>
 
-<br>
+部分案件資料正式公開。
 
-案件資料首次公開。
-
-</p>
-
+</div>
 
 
 </div>
@@ -567,6 +458,128 @@ crime_scene.jpg
 </div>
 
 
+
+
+
+
+<div class="box">
+
+
+<h2>
+證物紀錄
+</h2>
+
+
+
+<div class="evidence">
+
+
+<div class="card">
+
+<h3>
+E-001
+</h3>
+
+監視器影像
+
+<p>
+案發時間附近拍攝紀錄。
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+E-002
+</h3>
+
+現場遺留物
+
+<p>
+於公園東側區域發現。
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+E-003
+</h3>
+
+通話紀錄
+
+<p>
+相關人士通訊資料。
+</p>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="box">
+
+
+<h2>
+關係人物
+</h2>
+
+
+<div class="person">
+
+
+<div class="card">
+
+<h3>
+死者
+</h3>
+
+資料封存
+
+</div>
+
+
+<div class="card">
+
+<h3>
+嫌疑人
+</h3>
+
+周柏廷
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+證人
+</h3>
+
+部分資料公開
+
+</div>
+
+
+</div>
+
+
+</div>
 
 
 
@@ -578,107 +591,26 @@ crime_scene.jpg
 
 
 <h2>
-唯一嫌疑人
+公開文件
 </h2>
 
 
-<p>
-姓名：
-周柏廷
-</p>
+<div class="card">
 
+📄 初步調查報告
 
-<p>
-性別：
-男性
-</p>
+<br><br>
 
+📄 現場勘查紀錄
 
-<p>
-年齡：
-30歲
-</p>
+<br><br>
 
-
-<p class="status">
-目前狀態：
-逃亡中
-</p>
-
-
-
-
-<a href="suspect.html">
-
-
-<button>
-查看嫌疑人完整資料
-</button>
-
-
-</a>
-
-
+📄 證物分析報告
 
 </div>
 
 
-
-
-
-
-
-
-
-<div class="box link-box">
-
-
-<h2>
-公開調查資料
-</h2>
-
-
-
-<a href="evidence.html">
-▶ 證物資料
-</a>
-
-
-<a href="monitor.html">
-▶ 監視器紀錄
-</a>
-
-
-<a href="witness.html">
-▶ 目擊證詞
-</a>
-
-
-<a href="forensic.html">
-▶ 鑑識報告
-</a>
-
-
-<a href="court.html">
-▶ 法院紀錄
-</a>
-
-
-<a href="media.html">
-▶ 媒體報導
-</a>
-
-
-<a href="forum.html">
-▶ 調查論壇
-</a>
-
-
-
 </div>
-
-
-
 
 
 
@@ -692,21 +624,12 @@ crime_scene.jpg
 </h2>
 
 
-
 <p>
 
-本案件相關資料由中央刑案公開資料庫整理。
+本案件資料依公開調查紀錄整理。
+部分資訊因涉及個人隱私及司法程序限制，已進行遮蔽處理。
 
 </p>
-
-
-<p>
-
-部分文件因司法程序及個人資料保護，
-目前限制公開。
-
-</p>
-
 
 
 </div>
@@ -714,15 +637,17 @@ crime_scene.jpg
 
 
 
+<a href="cases.html">
+
+<button>
+返回案件資料庫
+</button>
+
+</a>
 
 
 
 </main>
-
-
-
-
-
 
 
 
@@ -734,11 +659,6 @@ crime_scene.jpg
 
 
 
-
-
-
-
 </body>
-
 
 </html>
