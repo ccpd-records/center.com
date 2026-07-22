@@ -19,29 +19,21 @@ body{
 
 margin:0;
 background:#080808;
-color:#dddddd;
+color:#ddd;
 font-family:"Microsoft JhengHei",sans-serif;
 
 }
 
 
 
-/* HEADER */
-
 header{
 
 background:#160000;
-padding:45px 60px;
 border-bottom:1px solid #800;
-
-}
-
-
-.brand{
+padding:25px 50px;
 
 display:flex;
 align-items:center;
-gap:45px;
 
 }
 
@@ -49,18 +41,29 @@ gap:45px;
 
 .logo{
 
-width:260px;
-height:auto;
+width:150px;
+height:150px;
+object-fit:contain;
+margin-right:40px;
 
 }
 
 
 
-.brand-text h1{
+.title-area{
 
-margin:0;
-font-size:48px;
+flex:1;
+text-align:center;
+
+}
+
+
+
+h1{
+
+font-size:42px;
 letter-spacing:8px;
+margin:0;
 
 }
 
@@ -68,10 +71,9 @@ letter-spacing:8px;
 
 .subtitle{
 
-margin-top:15px;
-color:#999;
-font-size:22px;
+font-size:20px;
 letter-spacing:5px;
+color:#aaa;
 
 }
 
@@ -79,12 +81,10 @@ letter-spacing:5px;
 
 
 
-/* NAV */
-
 nav{
 
 background:#111;
-padding:18px 60px;
+padding:18px 50px;
 border-bottom:1px solid #333;
 
 }
@@ -96,32 +96,42 @@ nav a{
 color:white;
 text-decoration:none;
 margin-right:35px;
-font-size:15px;
 
 }
 
 
-nav a:hover{
-
-color:#ff4444;
-
-}
-
-
-
-
-
-/* MAIN */
 
 main{
 
-padding:35px 60px;
+padding:40px 60px;
 
 }
 
 
 
-.box{
+.intro{
+
+background:#111;
+border:1px solid #333;
+padding:30px;
+margin-bottom:35px;
+
+}
+
+
+
+.section-title{
+
+font-size:24px;
+letter-spacing:3px;
+
+}
+
+
+
+
+
+.case{
 
 background:#111;
 border:1px solid #333;
@@ -132,52 +142,9 @@ margin-bottom:20px;
 
 
 
-.box h2{
-
-font-size:22px;
-font-weight:normal;
-margin-top:0;
-
-}
-
-
-
-
-
-.case{
-
-background:#090909;
-border:1px solid #333;
-padding:22px;
-margin-top:15px;
-
-}
-
-
-
 .case h3{
 
-font-size:20px;
-letter-spacing:2px;
-margin:0 0 15px 0;
-
-}
-
-
-
-.case h2{
-
-font-size:20px;
-font-weight:normal;
-
-}
-
-
-
-.case p,
-.box p{
-
-font-size:14px;
+letter-spacing:3px;
 
 }
 
@@ -185,27 +152,18 @@ font-size:14px;
 
 .status{
 
-color:#ff4444;
+color:#ff5555;
 
 }
-
 
 
 
 button{
 
 background:#800;
-border:0;
 color:white;
-padding:10px 22px;
-cursor:pointer;
-
-}
-
-
-button:hover{
-
-background:#b00000;
+border:0;
+padding:12px 25px;
 
 }
 
@@ -219,15 +177,11 @@ color:white;
 
 
 
-
-
-/* FOOTER */
-
 footer{
 
+text-align:center;
 padding:30px;
 color:#666;
-text-align:center;
 
 }
 
@@ -240,7 +194,10 @@ text-align:center;
 
 
 
+
+
 <body>
+
 
 
 
@@ -248,21 +205,12 @@ text-align:center;
 <header>
 
 
-
-<div class="brand">
-
-
-
-<img 
-src="c1d92c77-13c3-45cb-8c4d-45a5bb32073c.png"
-class="logo"
->
+<img class="logo"
+src="images/c1d92c77-13c3-45cb-8c4d-45a5bb32073c.png">
 
 
 
-
-<div class="brand-text">
-
+<div class="title-area">
 
 
 <h1>
@@ -270,15 +218,9 @@ class="logo"
 </h1>
 
 
-
-<p class="subtitle">
+<div class="subtitle">
 CENTRAL CRIMINAL DATABASE
-</p>
-
-
-
 </div>
-
 
 
 </div>
@@ -296,11 +238,9 @@ CENTRAL CRIMINAL DATABASE
 <nav>
 
 
-
 <a href="index.html">
 首頁
 </a>
-
 
 
 <a href="cases.html">
@@ -308,11 +248,9 @@ CENTRAL CRIMINAL DATABASE
 </a>
 
 
-
 <a href="missing.html">
 懸案檔案
 </a>
-
 
 
 <a href="forum.html">
@@ -329,36 +267,43 @@ CENTRAL CRIMINAL DATABASE
 
 
 
+
 <main>
 
 
 
 
 
-<div class="box">
+
+<div class="intro">
 
 
-<h2>
-資料庫公告
+<h2 class="section-title">
+資料庫介紹
 </h2>
 
 
 <p>
+
 中央刑案公開資料庫致力於蒐集、整理與保存重大刑事案件相關資訊。
+
 </p>
 
 
 <p>
-透過案件紀錄、時間軸、司法進程、證物資料與公開文件，
+
+透過案件紀錄、時間軸、司法文件、證物資料與鑑識報告，
 建立可查詢、可追溯的刑案資訊系統。
+
 </p>
 
 
 <p>
+
 讓真相有跡可循，
 讓歷史不被遺忘。
-</p>
 
+</p>
 
 
 </div>
@@ -369,12 +314,14 @@ CENTRAL CRIMINAL DATABASE
 
 
 
-<div class="box">
 
 
-<h2>
-最新公開案件
+<h2 class="section-title">
+公開案件
 </h2>
+
+
+
 
 
 
@@ -382,12 +329,135 @@ CENTRAL CRIMINAL DATABASE
 <div class="case">
 
 
-
 <h3>
-CC-2018-0419
+CASE-2014-0721
 </h3>
 
 
+<h2>
+雨夜失蹤事件
+</h2>
+
+
+<p>
+高中生雨夜失蹤案件。
+</p>
+
+
+<p>
+資料狀態：
+公開調查資料
+</p>
+
+
+<a href="case0721.html">
+
+<button>
+查看案件
+</button>
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="case">
+
+
+<h3>
+CASE-2016-1123
+</h3>
+
+
+<h2>
+白橋錄音事件
+</h2>
+
+
+<p>
+匿名錄音成為案件關鍵證物。
+</p>
+
+
+<p>
+資料狀態：
+部分封存
+</p>
+
+
+<a href="case1123.html">
+
+<button>
+查看案件
+</button>
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="case">
+
+
+<h3>
+CASE-2017-0908
+</h3>
+
+
+<h2>
+第十三號證物
+</h2>
+
+
+<p>
+特殊封存證物調查紀錄。
+</p>
+
+
+<p>
+資料狀態：
+限制公開
+</p>
+
+
+<a href="case0908.html">
+
+<button>
+查看案件
+</button>
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="case">
+
+
+<h3>
+CASE-2018-0419
+</h3>
 
 
 <h2>
@@ -395,97 +465,31 @@ CC-2018-0419
 </h2>
 
 
-
-
 <p>
-案件類型：
-重大刑事案件
+調查記者林子安死亡案件。
 </p>
-
 
 
 <p class="status">
 
-案件狀態：
-已結案（嫌疑人逃亡）
+資料狀態：
+公開調查完成
 
 </p>
-
-
-
-<p>
-
-公開時間：
-2026年
-
-</p>
-
-
 
 
 <a href="case0419.html">
 
-
 <button>
-
 查看案件
-
 </button>
-
 
 </a>
 
 
-
 </div>
 
 
-
-
-</div>
-
-
-
-
-
-
-
-<div class="box">
-
-
-<h2>
-公開資料項目
-</h2>
-
-
-
-<p>
-案件時間線
-</p>
-
-
-<p>
-嫌疑人資料
-</p>
-
-
-<p>
-證物紀錄
-</p>
-
-
-<p>
-媒體報導
-</p>
-
-
-<p>
-案件討論區
-</p>
-
-
-
-</div>
 
 
 
@@ -493,7 +497,6 @@ CC-2018-0419
 
 
 </main>
-
 
 
 
@@ -512,7 +515,7 @@ CC-2018-0419
 
 
 
-</body>
 
+</body>
 
 </html>
