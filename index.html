@@ -7,12 +7,20 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
 <title>
 中央刑案公開資料庫｜CENTRAL CRIMINAL DATABASE
 </title>
 
 
 <style>
+
+
+*{
+
+box-sizing:border-box;
+
+}
 
 
 body{
@@ -23,19 +31,22 @@ background:#080808;
 
 color:#dddddd;
 
-font-family:"Microsoft JhengHei",sans-serif;
+font-family:"Microsoft JhengHei",Arial,sans-serif;
 
 }
 
 
 
-/* Header */
+/* =====================
+   Header
+===================== */
+
 
 header{
 
 background:#160000;
 
-padding:25px 50px;
+padding:25px 45px;
 
 border-bottom:1px solid #800;
 
@@ -51,21 +62,24 @@ justify-content:flex-start;
 
 .logo{
 
-width:260px;
+width:280px;
 
-height:260px;
+height:280px;
 
 object-fit:contain;
 
-margin-right:20px;
+margin-right:15px;
 
 }
 
 
 
+
 .title-area{
 
-text-align:center;
+text-align:left;
+
+margin-left:0;
 
 }
 
@@ -73,13 +87,15 @@ text-align:center;
 
 h1{
 
-font-size:48px;
+font-size:46px;
 
-letter-spacing:8px;
+letter-spacing:6px;
 
 margin:0;
 
 white-space:nowrap;
+
+font-weight:bold;
 
 }
 
@@ -87,13 +103,13 @@ white-space:nowrap;
 
 .subtitle{
 
-font-size:24px;
+font-size:22px;
 
-letter-spacing:6px;
+letter-spacing:5px;
 
 color:#999;
 
-margin-top:12px;
+margin-top:8px;
 
 }
 
@@ -101,14 +117,16 @@ margin-top:12px;
 
 
 
-/* Navigation */
+/* =====================
+   Navigation
+===================== */
 
 
 nav{
 
 background:#111;
 
-padding:18px 50px;
+padding:15px 45px;
 
 border-bottom:1px solid #333;
 
@@ -124,7 +142,7 @@ text-decoration:none;
 
 margin-right:35px;
 
-font-size:16px;
+font-size:15px;
 
 }
 
@@ -140,12 +158,14 @@ color:white;
 
 
 
-/* Main */
+/* =====================
+   Main
+===================== */
 
 
 main{
 
-padding:40px 60px;
+padding:35px 55px;
 
 }
 
@@ -153,7 +173,9 @@ padding:40px 60px;
 
 
 
-/* Database intro */
+/* =====================
+   Database Introduction
+===================== */
 
 
 .box{
@@ -162,19 +184,21 @@ background:#111;
 
 border:1px solid #333;
 
-padding:30px;
+padding:25px;
 
-margin-bottom:40px;
+margin-bottom:35px;
 
 }
-
-
 
 
 
 .box h2{
 
+font-size:22px;
+
 letter-spacing:4px;
+
+margin-top:0;
 
 }
 
@@ -182,14 +206,28 @@ letter-spacing:4px;
 
 
 
-/* Case List */
+.box p{
+
+font-size:15px;
+
+line-height:1.8;
+
+}
+
+
+
+
+
+/* =====================
+   Case Index
+===================== */
 
 
 .case-section-title{
 
-font-size:22px;
+font-size:26px;
 
-letter-spacing:4px;
+letter-spacing:5px;
 
 margin-bottom:25px;
 
@@ -205,7 +243,7 @@ display:flex;
 
 flex-direction:column;
 
-gap:25px;
+gap:18px;
 
 }
 
@@ -213,17 +251,20 @@ gap:25px;
 
 
 
-.case-card{
+/* =====================
+   Case Card
+===================== */
 
+
+.case-card{
 
 background:#111;
 
 border:1px solid #333;
 
-padding:35px;
+padding:22px 25px;
 
 transition:.3s;
-
 
 }
 
@@ -231,9 +272,7 @@ transition:.3s;
 
 .case-card:hover{
 
-
 border-color:#800;
-
 
 }
 
@@ -243,13 +282,11 @@ border-color:#800;
 
 .case-header{
 
-
 border-bottom:1px solid #333;
 
-padding-bottom:20px;
+padding-bottom:12px;
 
-margin-bottom:25px;
-
+margin-bottom:15px;
 
 }
 
@@ -259,50 +296,41 @@ margin-bottom:25px;
 
 .case-id{
 
+font-size:13px;
 
-font-size:17px;
-
-letter-spacing:3px;
+letter-spacing:2px;
 
 color:#888;
 
-
 }
-
-
 
 
 
 .case-title{
 
+font-size:24px;
 
-font-size:32px;
+letter-spacing:3px;
 
-letter-spacing:5px;
-
-margin-top:10px;
-
+margin-top:8px;
 
 }
-
 
 
 
 .case-tag{
 
-
 display:inline-block;
 
-margin-top:15px;
+margin-top:10px;
 
-padding:6px 18px;
+padding:4px 12px;
 
 border:1px solid #900;
 
 color:#ff6666;
 
-font-size:14px;
-
+font-size:12px;
 
 }
 
@@ -310,30 +338,31 @@ font-size:14px;
 
 
 
-.case-info{
 
+/* =====================
+   Case Information
+===================== */
+
+
+.case-info{
 
 display:grid;
 
 grid-template-columns:repeat(3,1fr);
 
-gap:20px;
+gap:15px;
 
 }
 
 
 
-
-
 .info-box{
-
 
 background:#0b0b0b;
 
 border:1px solid #222;
 
-padding:18px;
-
+padding:10px;
 
 }
 
@@ -341,13 +370,11 @@ padding:18px;
 
 .info-title{
 
-
-font-size:13px;
+font-size:11px;
 
 color:#888;
 
-margin-bottom:10px;
-
+margin-bottom:6px;
 
 }
 
@@ -355,9 +382,7 @@ margin-bottom:10px;
 
 .info-content{
 
-
-font-size:17px;
-
+font-size:14px;
 
 }
 
@@ -365,15 +390,16 @@ font-size:17px;
 
 
 
+
 .case-summary{
 
+margin-top:15px;
 
-margin-top:25px;
+font-size:14px;
 
-line-height:1.8;
+line-height:1.6;
 
 color:#ccc;
-
 
 }
 
@@ -383,17 +409,13 @@ color:#ccc;
 
 .case-button{
 
-
-margin-top:25px;
-
+margin-top:15px;
 
 }
 
 
 
-
 button{
-
 
 background:#650000;
 
@@ -401,12 +423,11 @@ border:1px solid #a00000;
 
 color:white;
 
-padding:12px 28px;
+padding:8px 18px;
 
 cursor:pointer;
 
-font-size:15px;
-
+font-size:13px;
 
 }
 
@@ -414,26 +435,22 @@ font-size:15px;
 
 button:hover{
 
-
 background:#900;
 
-
 }
-
 
 
 
 a{
 
-
 color:white;
 
-
 }
+
+
 </style>
 
 </head>
-
 
 
 <body>
@@ -559,7 +576,7 @@ CENTRAL CRIMINAL DATABASE
 
 
 
-<!-- CASE 0721 -->
+<!-- CASE 2014-0721 -->
 
 
 <div class="case-card">
@@ -569,27 +586,22 @@ CENTRAL CRIMINAL DATABASE
 
 
 <div class="case-id">
-
 CASE-2014-0721
-
 </div>
 
 
 <div class="case-title">
-
 雨夜失蹤事件
-
 </div>
 
 
 <div class="case-tag">
-
 失蹤人口調查
-
 </div>
 
 
 </div>
+
 
 
 
@@ -643,6 +655,7 @@ CASE-2014-0721
 
 
 
+
 <div class="case-summary">
 
 高中生雨夜失蹤事件。
@@ -650,6 +663,7 @@ CASE-2014-0721
 為多年未解案件公開調查資料。
 
 </div>
+
 
 
 
@@ -666,6 +680,7 @@ CASE-2014-0721
 </div>
 
 
+
 </div>
 
 
@@ -675,7 +690,7 @@ CASE-2014-0721
 
 
 
-<!-- CASE 1123 -->
+<!-- CASE 2016-1123 -->
 
 
 <div class="case-card">
@@ -685,27 +700,22 @@ CASE-2014-0721
 
 
 <div class="case-id">
-
 CASE-2016-1123
-
 </div>
 
 
 <div class="case-title">
-
 白橋錄音事件
-
 </div>
 
 
 <div class="case-tag">
-
-調查關聯模組
-
+證物調查
 </div>
 
 
 </div>
+
 
 
 
@@ -759,13 +769,14 @@ CASE-2016-1123
 
 
 
+
 <div class="case-summary">
 
 匿名錄音成為案件關鍵證物。
-透過音檔 metadata、聲音分析與隱藏資料，
-可取得案件相關線索。
+案件涉及音檔分析、文件紀錄與來源追查。
 
 </div>
+
 
 
 
@@ -782,6 +793,7 @@ CASE-2016-1123
 </div>
 
 
+
 </div>
 
 
@@ -791,7 +803,7 @@ CASE-2016-1123
 
 
 
-<!-- CASE 0908 -->
+<!-- CASE 2017-0908 -->
 
 
 <div class="case-card">
@@ -801,27 +813,22 @@ CASE-2016-1123
 
 
 <div class="case-id">
-
 CASE-2017-0908
-
 </div>
 
 
 <div class="case-title">
-
 第十三號證物
-
 </div>
 
 
 <div class="case-tag">
-
 特殊證物調查
-
 </div>
 
 
 </div>
+
 
 
 
@@ -875,12 +882,14 @@ CASE-2017-0908
 
 
 
+
 <div class="case-summary">
 
 封存特殊證物調查紀錄。
-文件中疑似存在中央刑案資料庫內部身份完整性測試資料。
+部分文件因調查需求，目前限制公開。
 
 </div>
+
 
 
 
@@ -897,6 +906,7 @@ CASE-2017-0908
 </div>
 
 
+
 </div>
 
 
@@ -906,7 +916,7 @@ CASE-2017-0908
 
 
 
-<!-- CASE 0419 -->
+<!-- CASE 2018-0419 -->
 
 
 <div class="case-card">
@@ -916,27 +926,22 @@ CASE-2017-0908
 
 
 <div class="case-id">
-
 CASE-2018-0419
-
 </div>
 
 
 <div class="case-title">
-
 山河公園命案
-
 </div>
 
 
 <div class="case-tag">
-
-主線案件
-
+重大刑事案件
 </div>
 
 
 </div>
+
 
 
 
@@ -951,7 +956,7 @@ CASE-2018-0419
 </div>
 
 <div class="info-content">
-重大刑事案件
+刑事案件
 </div>
 
 </div>
@@ -990,13 +995,15 @@ CASE-2018-0419
 
 
 
+
 <div class="case-summary">
 
 調查記者林子安死亡案件。
 警方公開唯一嫌疑人周柏廷資料，
-案件涉及身份完整性驗證與多重身份關聯。
+案件包含證物、監視影像、證人紀錄與司法文件。
 
 </div>
+
 
 
 
@@ -1011,6 +1018,7 @@ CASE-2018-0419
 </a>
 
 </div>
+
 
 
 </div>
@@ -1035,6 +1043,7 @@ CASE-2018-0419
 
 
 <footer>
+
 
 中央刑案公開資料庫 © 2026
 
