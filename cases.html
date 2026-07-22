@@ -4,323 +4,444 @@
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-案件資料庫｜中央刑案公開資料庫
-</title>
-
+<title>案件資料庫｜中央刑案公開資料庫</title>
 
 <style>
 
-
 body{
-
 margin:0;
 background:#080808;
 color:#ddd;
 font-family:"Microsoft JhengHei",sans-serif;
-
 }
-
-
 
 header{
-
 background:#160000;
-padding:35px 60px;
+padding:25px 50px;
 border-bottom:1px solid #800;
-
+display:flex;
+align-items:center;
 }
 
+.logo{
+width:220px;
+height:220px;
+object-fit:contain;
+margin-right:18px;
+}
 
+.title-area{
+text-align:center;
+}
 
 h1{
-
-letter-spacing:5px;
-
+margin:0;
+font-size:44px;
+letter-spacing:8px;
 }
 
-
+.subtitle{
+margin-top:10px;
+font-size:22px;
+letter-spacing:5px;
+color:#999;
+}
 
 nav{
-
 background:#111;
-padding:18px 60px;
+padding:18px 50px;
 border-bottom:1px solid #333;
-
 }
-
-
 
 nav a{
-
-color:white;
+color:#ddd;
 text-decoration:none;
 margin-right:35px;
-
 }
 
-
+nav a:hover{
+color:white;
+}
 
 main{
-
-padding:40px 60px;
-
+max-width:1200px;
+margin:auto;
+padding:45px;
 }
-
-
 
 .box{
-
 background:#111;
 border:1px solid #333;
-padding:30px;
-margin-bottom:25px;
-
+padding:28px;
+margin-bottom:35px;
 }
 
+.box h2{
+margin-top:0;
+letter-spacing:4px;
+}
 
+.system{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+margin-top:20px;
+}
 
-.case{
+.system div{
+background:#0b0b0b;
+border:1px solid #222;
+padding:18px;
+}
 
-background:#090909;
+.system-title{
+font-size:13px;
+color:#888;
+margin-bottom:8px;
+}
+
+.system-value{
+font-size:20px;
+}
+
+.search{
+display:grid;
+grid-template-columns:2fr 1fr 1fr;
+gap:15px;
+margin-top:25px;
+}
+
+.search input,
+.search select{
+background:#0b0b0b;
+border:1px solid #444;
+color:#ddd;
+padding:12px;
+font-size:15px;
+}
+
+.case-card{
+background:#111;
 border:1px solid #333;
 padding:25px;
-margin-bottom:20px;
-
+margin-top:25px;
+transition:.3s;
 }
 
-
-
-.case h2{
-
-font-size:22px;
-font-weight:normal;
-
+.case-card:hover{
+border-color:#800;
 }
 
-
-
-.case h3{
-
-letter-spacing:3px;
-
+.case-id{
+font-size:14px;
+color:#888;
+letter-spacing:2px;
 }
 
-
-
-.status{
-
-color:#ff4444;
-
+.case-title{
+font-size:24px;
+margin:10px 0;
 }
 
+.case-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+margin-top:20px;
+}
 
+.info{
+background:#0b0b0b;
+border:1px solid #222;
+padding:15px;
+}
+
+.info-title{
+font-size:12px;
+color:#888;
+margin-bottom:8px;
+}
+
+.summary{
+margin-top:20px;
+line-height:1.8;
+color:#ccc;
+}
 
 button{
-
-background:#800;
-border:0;
+margin-top:20px;
+background:#650000;
+border:1px solid #a00000;
 color:white;
 padding:10px 25px;
-
+cursor:pointer;
 }
 
-
+button:hover{
+background:#900;
+}
 
 a{
-
 color:white;
-
+text-decoration:none;
 }
-
-
 
 footer{
-
 text-align:center;
-padding:30px;
-color:#666;
-
+padding:25px;
+background:#111;
+border-top:1px solid #333;
+color:#777;
+margin-top:50px;
 }
-
-
 
 </style>
 
-
 </head>
-
-
 
 <body>
 
-
-
-
 <header>
 
+<img class="logo" src="c1d92c77-13c3-45cb-8c4d-45a5bb32073c.png">
 
-<h1>
-案件資料庫
-</h1>
+<div class="title-area">
 
+<h1>中央刑案公開資料庫</h1>
 
-<p>
-CASE ARCHIVE SYSTEM
-</p>
+<div class="subtitle">
+CENTRAL CRIMINAL DATABASE
+</div>
 
+</div>
 
 </header>
 
-
-
-
-
-
-
 <nav>
 
+<a href="index.html">首頁</a>
 
-<a href="index.html">
-首頁
-</a>
+<a href="cases.html">案件資料庫</a>
 
+<a href="missing.html">懸案檔案</a>
 
-<a href="cases.html">
-案件資料庫
-</a>
-
-
-<a href="missing.html">
-懸案檔案
-</a>
-
-
-<a href="forum.html">
-調查論壇
-</a>
-
+<a href="forum.html">調查論壇</a>
 
 </nav>
 
-
-
-
-
-
-
 <main>
 
-
-
-
-
 <div class="box">
 
-
-<h2>
-公開案件列表
-</h2>
-
-
-
-
-
-<div class="case">
-
-
-<h3>
-CC-2018-0419
-</h3>
-
-
-
-<h2>
-山河公園命案
-</h2>
-
-
+<h2>案件資料庫</h2>
 
 <p>
-案件類型：
+公開刑案查詢系統，提供案件資訊、司法文件、證物紀錄及公開卷宗查閱。
+</p>
+
+<div class="system">
+
+<div>
+<div class="system-title">案件總數</div>
+<div class="system-value">0004</div>
+</div>
+
+<div>
+<div class="system-title">公開案件</div>
+<div class="system-value">0004</div>
+</div>
+
+<div>
+<div class="system-title">限制公開</div>
+<div class="system-value">0000</div>
+</div>
+
+<div>
+<div class="system-title">資料庫版本</div>
+<div class="system-value">v2.6.14</div>
+</div>
+
+</div>
+
+<div class="search">
+
+<input type="text" placeholder="請輸入案件名稱或案件編號">
+
+<select>
+<option>全部類型</option>
+</select>
+
+<select>
+<option>全部狀態</option>
+</select>
+
+</div>
+
+</div>
+
+<div class="case-card">
+
+<div class="case-id">CASE-2018-0419</div>
+
+<div class="case-title">山河公園命案</div>
+
+<div class="case-grid">
+
+<div class="info">
+<div class="info-title">案件類型</div>
 重大刑事案件
-</p>
+</div>
 
+<div class="info">
+<div class="info-title">發生日期</div>
+2018/04/19
+</div>
 
-<p class="status">
-案件狀態：
-已結案（嫌疑人逃亡）
-</p>
+<div class="info">
+<div class="info-title">案件狀態</div>
+公開調查完成
+</div>
 
+<div class="info">
+<div class="info-title">嫌疑人</div>
+周柏廷
+</div>
 
+</div>
 
-<p>
-公開時間：
-2026年
-</p>
-
-
+<div class="summary">
+2018年4月19日晚間，山河公園發生重大命案。警方公布唯一嫌疑人周柏廷，並公開案件卷宗供民眾查閱。
+</div>
 
 <a href="case0419.html">
-
-<button>
-查看案件
-</button>
-
+<button>查看完整卷宗</button>
 </a>
 
+</div>
 
+<div class="case-card">
+
+<div class="case-id">CASE-2017-0908</div>
+
+<div class="case-title">第十三號證物</div>
+
+<div class="case-grid">
+
+<div class="info">
+<div class="info-title">案件類型</div>
+特殊證物
+</div>
+
+<div class="info">
+<div class="info-title">發生日期</div>
+2017/09/08
+</div>
+
+<div class="info">
+<div class="info-title">案件狀態</div>
+限制公開
+</div>
+
+<div class="info">
+<div class="info-title">公開程度</div>
+部分公開
+</div>
 
 </div>
 
+<div class="summary">
+一份封存多年的特殊證物，其來源與用途仍在調查中。
+</div>
 
-
-
+<a href="case0908.html">
+<button>查看完整卷宗</button>
+</a>
 
 </div>
 
+<div class="case-card">
 
+<div class="case-id">CASE-2016-1123</div>
 
+<div class="case-title">白橋錄音事件</div>
 
+<div class="case-grid">
 
+<div class="info">
+<div class="info-title">案件類型</div>
+證物調查
+</div>
 
+<div class="info">
+<div class="info-title">發生日期</div>
+2016/11/23
+</div>
 
-<div class="box">
+<div class="info">
+<div class="info-title">案件狀態</div>
+部分封存
+</div>
 
-
-<h2>
-其他案件資料</h2>
-
-
-<p>
-目前部分案件資料仍在整理中。
-</p>
-
-
-<p>
-公開權限與案件狀態將依司法程序更新。
-</p>
-
-
+<div class="info">
+<div class="info-title">公開程度</div>
+部分公開
+</div>
 
 </div>
 
+<div class="summary">
+匿名錄音成為案件唯一關鍵證物，來源至今未能完全確認。
+</div>
 
+<a href="case1123.html">
+<button>查看完整卷宗</button>
+</a>
 
+</div>
 
+<div class="case-card">
 
+<div class="case-id">CASE-2014-0721</div>
 
+<div class="case-title">雨夜失蹤事件</div>
+
+<div class="case-grid">
+
+<div class="info">
+<div class="info-title">案件類型</div>
+失蹤案件
+</div>
+
+<div class="info">
+<div class="info-title">發生日期</div>
+2014/07/21
+</div>
+
+<div class="info">
+<div class="info-title">案件狀態</div>
+公開調查資料
+</div>
+
+<div class="info">
+<div class="info-title">失蹤人數</div>
+01
+</div>
+
+</div>
+
+<div class="summary">
+高中生於雨夜失蹤，案件至今仍未偵破，相關資料持續公開供民眾查閱。
+</div>
+
+<a href="case0721.html">
+<button>查看完整卷宗</button>
+</a>
+
+</div>
 
 </main>
-
-
-
-
-
-
 
 <footer>
 
@@ -328,12 +449,5 @@ CC-2018-0419
 
 </footer>
 
-
-
-
-
-
 </body>
-
-
 </html>
