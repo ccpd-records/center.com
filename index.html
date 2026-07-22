@@ -2,145 +2,195 @@
 <html lang="zh-Hant">
 
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>中央刑案公開資料庫</title>
+<title>
+中央刑案公開資料庫
+</title>
+
 
 <style>
 
-body {
-    margin: 0;
-    background: #0b0b0b;
-    color: #e5e5e5;
-    font-family: Arial, "Microsoft JhengHei", sans-serif;
-}
 
+body{
 
-header {
-    background: #140000;
-    border-bottom: 1px solid #7d0000;
-    padding: 40px;
-}
-
-
-.logo {
-    font-size: 36px;
-    font-weight: bold;
-    letter-spacing: 5px;
-}
-
-
-.subtitle {
-    color: #888;
-    margin-top: 10px;
-}
-
-
-
-nav {
-    background: #111;
-    padding: 15px 40px;
-}
-
-
-nav a {
-    color: #bbb;
-    text-decoration: none;
-    margin-right: 30px;
-}
-
-
-
-main {
-    padding: 40px;
-}
-
-
-
-.box {
-
-    background: #151515;
-    border: 1px solid #333;
-    padding: 30px;
-    margin-bottom: 30px;
+margin:0;
+background:#080808;
+color:#dddddd;
+font-family:"Microsoft JhengHei",sans-serif;
 
 }
 
 
 
-input {
+header{
 
-    width: 70%;
-    padding: 15px;
-    background: #000;
-    color: white;
-    border: 1px solid #555;
-
-}
-
-
-
-button {
-
-    padding: 15px 25px;
-    background: #8b0000;
-    color:white;
-    border: none;
+background:#160000;
+padding:50px 20px;
+border-bottom:1px solid #800;
+text-align:center;
 
 }
 
 
 
-.cards {
+.logo{
 
-    display:flex;
-    gap:20px;
-
-}
-
-
-
-.card {
-
-    background:#111;
-    border:1px solid #333;
-    padding:20px;
-    width:200px;
-    text-align:center;
+width:150px;
+height:auto;
+margin-bottom:25px;
 
 }
 
 
 
-.number {
+h1{
 
-    font-size:35px;
-    color:#ff4444;
-
-}
-
-
-
-.case {
-
-    border-left:3px solid #900;
-    padding-left:20px;
+letter-spacing:6px;
+font-size:32px;
 
 }
 
 
 
-footer {
+.subtitle{
 
-    text-align:center;
-    color:#666;
-    padding:30px;
+color:#999;
+letter-spacing:3px;
 
 }
+
+
+
+
+nav{
+
+background:#111;
+padding:20px;
+text-align:center;
+border-bottom:1px solid #333;
+
+}
+
+
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin:0 20px;
+
+}
+
+
+
+nav a:hover{
+
+color:#ff4444;
+
+}
+
+
+
+
+main{
+
+max-width:900px;
+margin:auto;
+padding:50px 20px;
+
+}
+
+
+
+
+.box{
+
+background:#111;
+border:1px solid #333;
+padding:35px;
+margin-bottom:30px;
+text-align:center;
+
+}
+
+
+
+
+.case{
+
+background:#090909;
+border:1px solid #333;
+padding:30px;
+margin-top:20px;
+
+}
+
+
+
+.case h3{
+
+font-size:26px;
+letter-spacing:3px;
+
+}
+
+
+
+.status{
+
+color:#ff4444;
+
+}
+
+
+
+
+button{
+
+background:#800;
+border:none;
+color:white;
+padding:12px 30px;
+font-size:16px;
+cursor:pointer;
+
+}
+
+
+
+button:hover{
+
+background:#b00000;
+
+}
+
+
+
+a{
+
+color:white;
+
+}
+
+
+
+
+footer{
+
+text-align:center;
+padding:30px;
+color:#666;
+
+}
+
 
 
 </style>
+
 
 </head>
 
@@ -149,37 +199,58 @@ footer {
 <body>
 
 
+
+
 <header>
 
-<div class="logo">
-中央刑案公開資料庫
-</div>
 
-<div class="subtitle">
-CENTRAL CRIMINAL CASE ARCHIVE
-</div>
+<img src="c1d92c77-13c3-45cb-8c4d-45a5bb32073c.png" class="logo">
+
+
+
+<h1>
+中央刑案公開資料庫
+</h1>
+
+
+
+<p class="subtitle">
+CENTRAL CRIMINAL DATABASE
+</p>
+
+
 
 </header>
 
 
 
+
+
 <nav>
+
 
 <a href="index.html">
 首頁
 </a>
 
+
+
 <a href="cases.html">
 案件資料庫
 </a>
+
+
 
 <a href="missing.html">
 懸案檔案
 </a>
 
+
+
 <a href="forum.html">
 調查論壇
 </a>
+
 
 
 </nav>
@@ -187,76 +258,10 @@ CENTRAL CRIMINAL CASE ARCHIVE
 
 
 
+
+
+
 <main>
-
-
-<div class="box">
-
-<h2>
-案件檢索系統
-</h2>
-
-
-<input placeholder="輸入案件編號或關鍵字">
-
-
-<button>
-搜尋
-</button>
-
-
-</div>
-
-
-
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<h3>
-案件收錄
-</h3>
-
-<div class="number">
-12483
-</div>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-未解案件
-</h3>
-
-<div class="number">
-327
-</div>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-重大案件
-</h3>
-
-<div class="number">
-56
-</div>
-
-</div>
-
-
-</div>
-
 
 
 
@@ -269,11 +274,16 @@ CENTRAL CRIMINAL CASE ARCHIVE
 </h2>
 
 
+
+
 <div class="case">
+
+
 
 <h3>
 CC-2019-0725
 </h3>
+
 
 
 <h2>
@@ -281,21 +291,81 @@ CC-2019-0725
 </h2>
 
 
+
+
 <p>
-案件類型：身份異常／失蹤案件
+案件類型：
+身份異常／失蹤案件
 </p>
 
 
-<p>
+
+
+<p class="status">
+
 案件狀態：
 調查中
+
 </p>
 
 
+
+
+
+<a href="case0725.html">
+
+
+<button>
+
+查看案件
+
+</button>
+
+
+</a>
+
+
+
 </div>
 
 
+
 </div>
+
+
+
+
+
+
+
+<div class="box">
+
+
+<h2>
+資料庫公告
+</h2>
+
+
+
+<p>
+
+中央刑案公開資料庫持續整理重大案件資料。
+
+</p>
+
+
+<p>
+
+部分案件因調查需求限制，
+僅公開部分資訊。
+
+</p>
+
+
+
+</div>
+
+
 
 
 
@@ -304,11 +374,18 @@ CC-2019-0725
 
 
 
+
+
 <footer>
+
 
 中央刑案公開資料庫 © 2026
 
+
 </footer>
+
+
+
 
 
 </body>
