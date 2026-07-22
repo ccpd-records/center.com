@@ -25,39 +25,46 @@ font-family:"Microsoft JhengHei",sans-serif;
 }
 
 
+/* 頂部品牌區 */
 
 header{
 
 background:#160000;
-padding:50px 20px;
+padding:35px 50px;
 border-bottom:1px solid #800;
-text-align:center;
 
 }
 
+
+.brand{
+
+display:flex;
+align-items:center;
+gap:35px;
+
+}
 
 
 .logo{
 
-width:150px;
+width:180px;
 height:auto;
-margin-bottom:25px;
 
 }
 
 
+.brand-text h1{
 
-h1{
-
-letter-spacing:6px;
+margin:0;
 font-size:32px;
+letter-spacing:6px;
 
 }
-
 
 
 .subtitle{
 
+margin-top:12px;
 color:#999;
 letter-spacing:3px;
 
@@ -66,25 +73,24 @@ letter-spacing:3px;
 
 
 
+/* 導覽列 */
+
 nav{
 
 background:#111;
-padding:20px;
-text-align:center;
+padding:20px 50px;
 border-bottom:1px solid #333;
 
 }
-
 
 
 nav a{
 
 color:white;
 text-decoration:none;
-margin:0 20px;
+margin-right:35px;
 
 }
-
 
 
 nav a:hover{
@@ -96,14 +102,13 @@ color:#ff4444;
 
 
 
+/* 內容 */
+
 main{
 
-max-width:900px;
-margin:auto;
-padding:50px 20px;
+padding:40px 50px;
 
 }
-
 
 
 
@@ -111,12 +116,10 @@ padding:50px 20px;
 
 background:#111;
 border:1px solid #333;
-padding:35px;
-margin-bottom:30px;
-text-align:center;
+padding:30px;
+margin-bottom:25px;
 
 }
-
 
 
 
@@ -124,7 +127,7 @@ text-align:center;
 
 background:#090909;
 border:1px solid #333;
-padding:30px;
+padding:25px;
 margin-top:20px;
 
 }
@@ -148,18 +151,15 @@ color:#ff4444;
 
 
 
-
 button{
 
 background:#800;
-border:none;
+border:0;
 color:white;
-padding:12px 30px;
-font-size:16px;
+padding:12px 25px;
 cursor:pointer;
 
 }
-
 
 
 button:hover{
@@ -178,21 +178,19 @@ color:white;
 
 
 
-
 footer{
 
-text-align:center;
-padding:30px;
+padding:30px 50px;
 color:#666;
 
 }
-
 
 
 </style>
 
 
 </head>
+
 
 
 
@@ -204,8 +202,14 @@ color:#666;
 <header>
 
 
+<div class="brand">
+
+
 <img src="c1d92c77-13c3-45cb-8c4d-45a5bb32073c.png" class="logo">
 
+
+
+<div class="brand-text">
 
 
 <h1>
@@ -213,11 +217,16 @@ color:#666;
 </h1>
 
 
-
 <p class="subtitle">
 CENTRAL CRIMINAL DATABASE
 </p>
 
+
+
+</div>
+
+
+</div>
 
 
 </header>
@@ -234,11 +243,9 @@ CENTRAL CRIMINAL DATABASE
 </a>
 
 
-
 <a href="cases.html">
 案件資料庫
 </a>
-
 
 
 <a href="missing.html">
@@ -246,11 +253,9 @@ CENTRAL CRIMINAL DATABASE
 </a>
 
 
-
 <a href="forum.html">
 調查論壇
 </a>
-
 
 
 </nav>
@@ -262,6 +267,7 @@ CENTRAL CRIMINAL DATABASE
 
 
 <main>
+
 
 
 
@@ -279,11 +285,9 @@ CENTRAL CRIMINAL DATABASE
 <div class="case">
 
 
-
 <h3>
 CC-2019-0725
 </h3>
-
 
 
 <h2>
@@ -291,14 +295,10 @@ CC-2019-0725
 </h2>
 
 
-
-
 <p>
 案件類型：
 身份異常／失蹤案件
 </p>
-
-
 
 
 <p class="status">
@@ -310,15 +310,11 @@ CC-2019-0725
 
 
 
-
-
 <a href="case0725.html">
 
 
 <button>
-
 查看案件
-
 </button>
 
 
@@ -346,24 +342,18 @@ CC-2019-0725
 </h2>
 
 
-
 <p>
-
-中央刑案公開資料庫持續整理重大案件資料。
-
+中央刑案公開資料庫持續整理重大刑事案件資料。
 </p>
 
 
 <p>
-
-部分案件因調查需求限制，
-僅公開部分資訊。
-
+部分案件因調查需求，僅公開部分內容。
 </p>
-
 
 
 </div>
+
 
 
 
@@ -376,14 +366,12 @@ CC-2019-0725
 
 
 
-<footer>
 
+<footer>
 
 中央刑案公開資料庫 © 2026
 
-
 </footer>
-
 
 
 
