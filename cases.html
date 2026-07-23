@@ -37,6 +37,11 @@ font-family:"Microsoft JhengHei",Arial,sans-serif;
 
 
 
+/* =====================
+Header
+===================== */
+
+
 header{
 
 background:#160000;
@@ -72,8 +77,6 @@ margin-right:15px;
 .title-area{
 
 text-align:left;
-
-margin-left:0;
 
 }
 
@@ -111,6 +114,11 @@ margin-top:8px;
 
 
 
+/* =====================
+Navigation
+===================== */
+
+
 nav{
 
 background:#111;
@@ -146,12 +154,17 @@ color:white;
 
 
 
+
+/* =====================
+Main
+===================== */
+
+
 main{
 
 padding:35px 55px;
 
 }
-
 
 
 
@@ -182,8 +195,6 @@ margin-top:0;
 
 
 
-
-
 .box p{
 
 font-size:15px;
@@ -192,52 +203,6 @@ line-height:1.8;
 
 }
 
-
-
-
-.search-area{
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:15px;
-
-margin-bottom:35px;
-
-}
-
-
-
-.search-box{
-
-background:#0b0b0b;
-
-border:1px solid #333;
-
-padding:15px;
-
-}
-
-
-
-.search-title{
-
-font-size:12px;
-
-color:#888;
-
-margin-bottom:8px;
-
-}
-
-
-
-.search-content{
-
-font-size:14px;
-
-}
 
 
 
@@ -264,7 +229,6 @@ flex-direction:column;
 gap:18px;
 
 }
-
 
 
 
@@ -319,6 +283,7 @@ color:#888;
 
 
 
+
 .case-title{
 
 font-size:24px;
@@ -351,8 +316,6 @@ font-size:12px;
 
 
 
-
-
 .case-info{
 
 display:grid;
@@ -365,6 +328,7 @@ gap:15px;
 
 
 
+
 .info-box{
 
 background:#0b0b0b;
@@ -374,6 +338,7 @@ border:1px solid #222;
 padding:10px;
 
 }
+
 
 
 
@@ -397,7 +362,6 @@ font-size:14px;
 
 
 
-
 .case-summary{
 
 margin-top:15px;
@@ -412,12 +376,12 @@ color:#ccc;
 
 
 
+
 .case-button{
 
 margin-top:15px;
 
 }
-
 
 
 
@@ -479,6 +443,7 @@ letter-spacing:2px;
 
 </style>
 
+
 </head>
 
 
@@ -492,6 +457,7 @@ letter-spacing:2px;
 
 <img class="logo"
 src="c1d92c77-13c3-45cb-8c4d-45a5bb32073c.png">
+
 
 
 <div class="title-area">
@@ -511,6 +477,8 @@ CENTRAL CRIMINAL DATABASE
 
 
 </header>
+
+
 
 
 
@@ -558,70 +526,20 @@ CENTRAL CRIMINAL DATABASE
 
 
 <p>
-中央刑案公開資料庫收錄重大刑事案件公開紀錄。
+本資料庫收錄中央刑案公開調查案件。
 </p>
 
 
 <p>
-本資料庫提供案件摘要、時間軸、人物資料、
-證物紀錄、司法文件與修正歷史查詢功能。
+案件資料包含事件紀錄、時間軸、相關人物、
+證物資料與公開文件。
 </p>
 
 
 <p>
-部分案件因調查權限限制，
-僅開放指定閱讀等級。
+部分案件因調查程序或資料狀態限制，
+僅提供部分公開內容。
 </p>
-
-
-</div>
-
-
-
-
-
-<div class="search-area">
-
-
-<div class="search-box">
-
-<div class="search-title">
-案件搜尋
-</div>
-
-<div class="search-content">
-依案件編號或名稱查詢
-</div>
-
-</div>
-
-
-
-<div class="search-box">
-
-<div class="search-title">
-案件分類
-</div>
-
-<div class="search-content">
-刑事案件／失蹤案件／特殊調查
-</div>
-
-</div>
-
-
-
-<div class="search-box">
-
-<div class="search-title">
-資料狀態
-</div>
-
-<div class="search-content">
-公開／封存／限制閱覽
-</div>
-
-</div>
 
 
 </div>
@@ -632,7 +550,7 @@ CENTRAL CRIMINAL DATABASE
 
 <div class="case-section-title">
 
-案件檔案索引
+案件索引
 
 </div>
 
@@ -659,7 +577,7 @@ CASE-2014-0721
 
 
 <div class="case-tag">
-失蹤案件
+失蹤案件調查
 </div>
 
 
@@ -673,7 +591,21 @@ CASE-2014-0721
 <div class="info-box">
 
 <div class="info-title">
-案件日期
+案件類型
+</div>
+
+<div class="info-content">
+失蹤人口案件
+</div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
+發生日期
 </div>
 
 <div class="info-content">
@@ -697,32 +629,15 @@ CASE-2014-0721
 </div>
 
 
-
-<div class="info-box">
-
-<div class="info-title">
-閱讀權限等級
 </div>
-
-<div class="info-content">
-LEVEL 1
-</div>
-
-</div>
-
-
-</div>
-
 
 
 
 <div class="case-summary">
 
-高中生雨夜失蹤案件。
-公開資料包含人物基本資料、家庭關係、
-失蹤紀錄與相關來源文件。
-
-本案件後續被列入身份資料交叉比對項目。
+雨夜後一家人失蹤事件。
+現場留下受潮文件、家庭照片與早年生活紀錄，
+後續資料比對發現部分身份資訊存在異常關聯。
 
 </div>
 
@@ -733,7 +648,7 @@ LEVEL 1
 <a href="case0721.html">
 
 <button>
-查看案件檔案
+查看完整卷宗
 </button>
 
 </a>
@@ -744,6 +659,111 @@ LEVEL 1
 </div>
 
 
+
+
+
+
+
+<!-- CASE 2015-0314 -->
+
+
+<div class="case-card">
+
+
+<div class="case-header">
+
+
+<div class="case-id">
+CASE-2015-0314
+</div>
+
+
+<div class="case-title">
+星瀚資料外洩事件
+</div>
+
+
+<div class="case-tag">
+企業資料事件
+</div>
+
+
+</div>
+
+
+
+<div class="case-info">
+
+
+<div class="info-box">
+
+<div class="info-title">
+案件類型
+</div>
+
+<div class="info-content">
+資料外洩調查
+</div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
+發生日期
+</div>
+
+<div class="info-content">
+2015 / 03 / 14
+</div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
+案件狀態
+</div>
+
+<div class="info-content">
+公開調查資料
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<div class="case-summary">
+
+星瀚科技內部資料外洩事件。
+外流文件包含員工資料、專案紀錄、
+內部郵件與權限紀錄。
+
+</div>
+
+
+
+<div class="case-button">
+
+<a href="case0314.html">
+
+<button>
+查看完整卷宗
+</button>
+
+</a>
+
+</div>
+
+
+</div>
 
 
 
@@ -785,7 +805,21 @@ CASE-2016-1123
 <div class="info-box">
 
 <div class="info-title">
-案件日期
+案件類型
+</div>
+
+<div class="info-content">
+特殊證物調查
+</div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
+發生日期
 </div>
 
 <div class="info-content">
@@ -809,32 +843,15 @@ CASE-2016-1123
 </div>
 
 
-
-<div class="info-box">
-
-<div class="info-title">
-閱讀權限等級
 </div>
-
-<div class="info-content">
-LEVEL 2
-</div>
-
-</div>
-
-
-</div>
-
 
 
 
 <div class="case-summary">
 
-匿名錄音檔案成為案件核心證物。
-案件資料包含音檔分析紀錄、
-來源追查文件與版本修正紀錄。
-
-部分證物資料仍處於封存狀態。
+白橋附近發現匿名錄音設備。
+錄音內容涉及調查記者林子安追查資料異常事件，
+成為後續調查的重要線索。
 
 </div>
 
@@ -845,7 +862,7 @@ LEVEL 2
 <a href="case1123.html">
 
 <button>
-查看案件檔案
+查看完整卷宗
 </button>
 
 </a>
@@ -861,7 +878,106 @@ LEVEL 2
 
 
 
+<!-- CASE 2016-1211 -->
 
+
+<div class="case-card">
+
+
+<div class="case-header">
+
+
+<div class="case-id">
+CASE-2016-1211
+</div>
+
+
+<div class="case-title">
+五峰別館夜訪事件
+</div>
+
+
+<div class="case-tag">
+證人資料調查
+</div>
+
+
+</div>
+
+
+
+<div class="case-info">
+
+
+<div class="info-box">
+
+<div class="info-title">
+案件類型
+</div>
+
+<div class="info-content">
+民間證詞調查
+</div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
+發生日期
+</div>
+
+<div class="info-content">
+2016 / 12 / 11
+</div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
+案件狀態
+</div>
+
+<div class="info-content">
+資料整理中
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<div class="case-summary">
+
+半廢棄別館夜間活動紀錄。
+案件涉及照片、對話紀錄與相關人士證詞，
+包含周柏廷相關生活資料。
+
+</div>
+
+
+
+<div class="case-button">
+
+<a href="case1211.html">
+
+<button>
+查看完整卷宗
+</button>
+
+</a>
+
+</div>
+
+
+</div>
 
 <!-- CASE 2017-0908 -->
 
@@ -883,7 +999,7 @@ CASE-2017-0908
 
 
 <div class="case-tag">
-特殊證物調查
+封存證物調查
 </div>
 
 
@@ -897,7 +1013,21 @@ CASE-2017-0908
 <div class="info-box">
 
 <div class="info-title">
-案件日期
+案件類型
+</div>
+
+<div class="info-content">
+證物異常紀錄
+</div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
+發生日期
 </div>
 
 <div class="info-content">
@@ -921,32 +1051,15 @@ CASE-2017-0908
 </div>
 
 
-
-<div class="info-box">
-
-<div class="info-title">
-閱讀權限等級
 </div>
-
-<div class="info-content">
-LEVEL 3
-</div>
-
-</div>
-
-
-</div>
-
 
 
 
 <div class="case-summary">
 
-案件涉及特殊證物調查。
-公開卷宗僅保留部分資訊，
-其餘文件需取得更高權限後查閱。
-
-相關資料於後續案件中被再次引用。
+封存案件中發現第十三號證物資料異常。
+文件版本、入庫紀錄與覆核標記存在差異，
+目前仍持續進行資料比對。
 
 </div>
 
@@ -957,7 +1070,7 @@ LEVEL 3
 <a href="case0908.html">
 
 <button>
-查看案件檔案
+查看完整卷宗
 </button>
 
 </a>
@@ -968,6 +1081,111 @@ LEVEL 3
 </div>
 
 
+
+
+
+
+
+<!-- CASE 2017-1119 -->
+
+
+<div class="case-card">
+
+
+<div class="case-header">
+
+
+<div class="case-id">
+CASE-2017-1119
+</div>
+
+
+<div class="case-title">
+霧港重整事件
+</div>
+
+
+<div class="case-tag">
+資料重整調查
+</div>
+
+
+</div>
+
+
+
+<div class="case-info">
+
+
+<div class="info-box">
+
+<div class="info-title">
+案件類型
+</div>
+
+<div class="info-content">
+資料整併事件
+</div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
+發生日期
+</div>
+
+<div class="info-content">
+2017 / 11 / 19
+</div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
+案件狀態
+</div>
+
+<div class="info-content">
+限制公開
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<div class="case-summary">
+
+港區資料系統重整事件。
+多份不同來源資料於短時間內完成整併，
+部分欄位呈現高度一致但來源不明。
+
+</div>
+
+
+
+<div class="case-button">
+
+<a href="case1119.html">
+
+<button>
+查看完整卷宗
+</button>
+
+</a>
+
+</div>
+
+
+</div>
 
 
 
@@ -1009,7 +1227,21 @@ CASE-2018-0419
 <div class="info-box">
 
 <div class="info-title">
-案件日期
+案件類型
+</div>
+
+<div class="info-content">
+刑事死亡案件
+</div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
+發生日期
 </div>
 
 <div class="info-content">
@@ -1033,35 +1265,15 @@ CASE-2018-0419
 </div>
 
 
-
-<div class="info-box">
-
-<div class="info-title">
-閱讀權限等級
 </div>
-
-<div class="info-content">
-LEVEL 4
-</div>
-
-</div>
-
-
-</div>
-
 
 
 
 <div class="case-summary">
 
 調查記者林子安死亡案件。
-
-警方公開主要嫌疑人周柏廷資料，
-包含人物檔案、證物紀錄、監視影像、
-鑑識報告與司法文件。
-
-後續資料比對發現，
-嫌疑人身份存在異常紀錄。
+案件現場發現調查筆記、資料袋與異常監視紀錄，
+警方公開周柏廷相關調查資料。
 
 </div>
 
@@ -1072,7 +1284,7 @@ LEVEL 4
 <a href="case0419.html">
 
 <button>
-查看案件檔案
+查看完整卷宗
 </button>
 
 </a>
@@ -1088,8 +1300,7 @@ LEVEL 4
 
 
 
-
-<!-- CC-2019-0725 -->
+<!-- CASE 2018-0507 -->
 
 
 <div class="case-card">
@@ -1099,17 +1310,17 @@ LEVEL 4
 
 
 <div class="case-id">
-CC-2019-0725
+CASE-2018-0507
 </div>
 
 
 <div class="case-title">
-不存在的嫌疑人
+空橋洞坍塌事件
 </div>
 
 
 <div class="case-tag">
-特殊調查案件
+封存資料發現
 </div>
 
 
@@ -1123,11 +1334,25 @@ CC-2019-0725
 <div class="info-box">
 
 <div class="info-title">
-案件日期
+案件類型
 </div>
 
 <div class="info-content">
-2019 / 07 / 25
+事故調查
+</div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
+發生日期
+</div>
+
+<div class="info-content">
+2018 / 05 / 07
 </div>
 
 </div>
@@ -1141,40 +1366,21 @@ CC-2019-0725
 </div>
 
 <div class="info-content">
-資料異常調查中
-</div>
-
-</div>
-
-
-
-<div class="info-box">
-
-<div class="info-title">
-閱讀權限等級
-</div>
-
-<div class="info-content">
-LEVEL 5
+重新調查
 </div>
 
 </div>
 
 
 </div>
-
 
 
 
 <div class="case-summary">
 
-警方公開一名具有完整人生紀錄的嫌疑人資料。
-
-然而經來源檢核後，
-發現該人物可能不存在於任何原始資料來源。
-
-案件涉及人物資料重整、
-來源比對與身份完整性驗證。
+事故現場翻出封存資料與原始文件。
+相關資料涉及多起案件比對，
+並重新開啟部分調查方向。
 
 </div>
 
@@ -1182,10 +1388,10 @@ LEVEL 5
 
 <div class="case-button">
 
-<a href="case0725.html">
+<a href="case0507.html">
 
 <button>
-查看案件檔案
+查看完整卷宗
 </button>
 
 </a>
@@ -1216,6 +1422,7 @@ LEVEL 5
 中央刑案公開資料庫 © 2026
 
 </footer>
+
 
 
 
