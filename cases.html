@@ -15,11 +15,8 @@
 
 <style>
 
-
 *{
-
 box-sizing:border-box;
-
 }
 
 
@@ -29,12 +26,11 @@ margin:0;
 
 background:#080808;
 
-color:#dddddd;
+color:#ddd;
 
 font-family:"Microsoft JhengHei",Arial,sans-serif;
 
 }
-
 
 
 /* =====================
@@ -54,10 +50,7 @@ display:flex;
 
 align-items:center;
 
-justify-content:flex-start;
-
 }
-
 
 
 .logo{
@@ -73,13 +66,11 @@ margin-right:15px;
 }
 
 
-
 .title-area{
 
 text-align:left;
 
 }
-
 
 
 h1{
@@ -91,8 +82,6 @@ letter-spacing:6px;
 margin:0;
 
 white-space:nowrap;
-
-font-weight:bold;
 
 }
 
@@ -129,7 +118,6 @@ border-bottom:1px solid #333;
 }
 
 
-
 nav a{
 
 color:#ddd;
@@ -143,7 +131,6 @@ font-size:15px;
 }
 
 
-
 nav a:hover{
 
 color:white;
@@ -152,9 +139,8 @@ color:white;
 
 
 
-
 /* =====================
-Main
+Main Database Layout
 ===================== */
 
 
@@ -166,14 +152,10 @@ padding:35px 55px;
 
 
 
+/* Database Banner */
 
 
-/* =====================
-Database Search Header
-===================== */
-
-
-.archive-header{
+.database-banner{
 
 background:#111;
 
@@ -187,92 +169,39 @@ margin-bottom:30px;
 
 
 
-.archive-title{
+.database-banner h2{
 
-font-size:28px;
+font-size:30px;
 
 letter-spacing:6px;
 
-margin-bottom:10px;
+margin:0 0 12px 0;
 
 }
 
 
+.database-banner p{
 
-.archive-sub{
+color:#999;
 
-color:#888;
-
-letter-spacing:3px;
-
-font-size:14px;
+line-height:1.8;
 
 }
-
-
-
-
-
-.archive-status{
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:15px;
-
-margin-top:25px;
-
-}
-
-
-
-.status-box{
-
-background:#0b0b0b;
-
-border:1px solid #333;
-
-padding:15px;
-
-}
-
-
-
-.status-title{
-
-font-size:12px;
-
-color:#888;
-
-}
-
-
-
-.status-number{
-
-font-size:22px;
-
-margin-top:8px;
-
-}
-
-
 
 
 
 /* =====================
-Search Area
+Control Area
 ===================== */
 
 
-.search-box{
+.database-control{
 
-background:#111;
+display:grid;
 
-border:1px solid #333;
+grid-template-columns:220px 1fr;
 
-padding:25px;
+gap:25px;
 
 margin-bottom:35px;
 
@@ -280,104 +209,144 @@ margin-bottom:35px;
 
 
 
-.search-title{
-
-font-size:20px;
-
-letter-spacing:4px;
-
-margin-bottom:20px;
-
-}
+/* Side */
 
 
+.category-panel{
 
-.search-input{
+background:#111;
 
-width:100%;
+border:1px solid #333;
 
-background:#080808;
-
-border:1px solid #444;
-
-padding:12px;
-
-color:white;
-
-font-size:15px;
+padding:20px;
 
 }
 
 
 
-.search-option{
+.category-title{
 
-display:flex;
+font-size:16px;
+
+letter-spacing:3px;
+
+border-bottom:1px solid #333;
+
+padding-bottom:12px;
+
+margin-bottom:15px;
+
+}
+
+
+
+.category-item{
+
+padding:10px 0;
+
+color:#aaa;
+
+border-bottom:1px solid #222;
+
+font-size:14px;
+
+}
+
+
+
+.category-item:hover{
+
+color:#fff;
+
+}
+
+
+
+/* Statistics */
+
+
+.database-info{
+
+background:#111;
+
+border:1px solid #333;
+
+padding:20px;
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
 
 gap:15px;
 
-margin-top:15px;
+}
+
+
+
+.stat-box{
+
+background:#090909;
+
+border:1px solid #222;
+
+padding:15px;
 
 }
 
 
 
-select{
+.stat-title{
 
-background:#080808;
+font-size:12px;
 
-border:1px solid #444;
-
-color:#ddd;
-
-padding:10px;
+color:#777;
 
 }
 
 
 
-.search-btn{
+.stat-number{
 
-background:#650000;
+font-size:25px;
 
-border:1px solid #a00000;
+color:#fff;
 
-color:white;
-
-padding:10px 25px;
-
-cursor:pointer;
+margin-top:8px;
 
 }
-
-
 
 
 
 /* =====================
-Case Database List
+Case Database Table
 ===================== */
 
 
-.case-list-title{
+.case-table{
 
-font-size:26px;
+background:#111;
 
-letter-spacing:5px;
-
-margin-bottom:20px;
+border:1px solid #333;
 
 }
 
 
 
-.case-table{
+.table-header{
 
-display:flex;
+display:grid;
 
-flex-direction:column;
+grid-template-columns:150px 1fr 120px 130px 150px;
 
-gap:15px;
+background:#180000;
+
+padding:15px;
+
+font-size:13px;
+
+letter-spacing:2px;
+
+border-bottom:1px solid #800;
 
 }
 
@@ -385,13 +354,15 @@ gap:15px;
 
 .case-row{
 
-background:#111;
+display:grid;
 
-border:1px solid #333;
+grid-template-columns:150px 1fr 120px 130px 150px;
 
-padding:22px;
+padding:18px 15px;
 
-transition:.3s;
+border-bottom:1px solid #222;
+
+align-items:center;
 
 }
 
@@ -399,23 +370,7 @@ transition:.3s;
 
 .case-row:hover{
 
-border-color:#900;
-
-}
-
-
-
-
-
-.case-top{
-
-display:flex;
-
-justify-content:space-between;
-
-border-bottom:1px solid #333;
-
-padding-bottom:12px;
+background:#151515;
 
 }
 
@@ -427,7 +382,25 @@ color:#888;
 
 font-size:13px;
 
+}
+
+
+
+.case-name{
+
+font-size:18px;
+
 letter-spacing:2px;
+
+}
+
+
+
+.case-type{
+
+color:#ff6666;
+
+font-size:13px;
 
 }
 
@@ -435,91 +408,21 @@ letter-spacing:2px;
 
 .case-status{
 
-font-size:12px;
-
-padding:4px 12px;
-
-border:1px solid #900;
-
-color:#ff6666;
+font-size:13px;
 
 }
 
 
 
+.case-link a{
 
-
-.case-name{
-
-font-size:25px;
-
-letter-spacing:3px;
-
-margin-top:15px;
+text-decoration:none;
 
 }
 
 
 
-
-
-.case-data{
-
-display:grid;
-
-grid-template-columns:repeat(4,1fr);
-
-gap:15px;
-
-margin-top:20px;
-
-}
-
-
-
-.data-box{
-
-background:#090909;
-
-border:1px solid #222;
-
-padding:12px;
-
-}
-
-
-
-.data-title{
-
-font-size:11px;
-
-color:#888;
-
-}
-
-
-
-.data-content{
-
-margin-top:5px;
-
-font-size:14px;
-
-}
-
-
-
-
-
-.case-link{
-
-margin-top:20px;
-
-}
-
-
-
-button{
+.case-link button{
 
 background:#650000;
 
@@ -527,7 +430,7 @@ border:1px solid #a00000;
 
 color:white;
 
-padding:8px 18px;
+padding:7px 15px;
 
 cursor:pointer;
 
@@ -535,8 +438,7 @@ cursor:pointer;
 
 
 
-
-button:hover{
+.case-link button:hover{
 
 background:#900;
 
@@ -544,6 +446,7 @@ background:#900;
 
 
 
+/* Footer */
 
 
 footer{
@@ -552,13 +455,11 @@ text-align:center;
 
 padding:25px;
 
-border-top:1px solid #333;
-
 background:#111;
 
-color:#777;
+border-top:1px solid #333;
 
-font-size:14px;
+color:#777;
 
 letter-spacing:2px;
 
@@ -567,12 +468,11 @@ letter-spacing:2px;
 
 </style>
 
+
 </head>
 
 
-
 <body>
-
 
 
 <header>
@@ -582,9 +482,7 @@ letter-spacing:2px;
 src="c1d92c77-13c3-45cb-8c4d-45a5bb32073c.png">
 
 
-
 <div class="title-area">
-
 
 <h1>
 中央刑案公開資料庫
@@ -600,7 +498,6 @@ CENTRAL CRIMINAL DATABASE
 
 
 </header>
-
 
 
 
@@ -629,62 +526,127 @@ CENTRAL CRIMINAL DATABASE
 
 </nav>
 
+
+
+
 <main>
 
 
 
-<section class="archive-header">
+<div class="database-banner">
 
 
-<div class="archive-title">
+<h2>
 案件資料庫
+</h2>
+
+
+<p>
+CENTRAL CASE ARCHIVE SYSTEM
+<br>
+本系統收錄中央刑案公開資料庫案件紀錄。
+所有案件依編號、事件類型與調查狀態分類保存。
+</p>
+
+
 </div>
 
 
-<div class="archive-sub">
-CASE ARCHIVE SYSTEM
+
+<div class="database-control">
+
+
+<div class="category-panel">
+
+
+<div class="category-title">
+案件分類
+</div>
+
+
+<div class="category-item">
+全部案件
+</div>
+
+
+<div class="category-item">
+重大刑案
+</div>
+
+
+<div class="category-item">
+失蹤案件
+</div>
+
+
+<div class="category-item">
+資料異常案件
+</div>
+
+
+<div class="category-item">
+證物調查案件
+</div>
+
+
+<div class="category-item">
+重新調查案件
+</div>
+
+
 </div>
 
 
 
-<div class="archive-status">
+<div class="database-info">
 
 
-<div class="status-box">
+<div class="stat-box">
 
-<div class="status-title">
-收錄案件
+<div class="stat-title">
+案件總數
 </div>
 
-<div class="status-number">
+<div class="stat-number">
 08
 </div>
 
 </div>
 
 
+<div class="stat-box">
 
-<div class="status-box">
-
-<div class="status-title">
-公開狀態
+<div class="stat-title">
+公開案件
 </div>
 
-<div class="status-number">
-部分公開
+<div class="stat-number">
+04
 </div>
 
 </div>
 
 
+<div class="stat-box">
 
-<div class="status-box">
+<div class="stat-title">
+限制閱覽
+</div>
 
-<div class="status-title">
+<div class="stat-number">
+02
+</div>
+
+</div>
+
+
+<div class="stat-box">
+
+<div class="stat-title">
 最後更新
 </div>
 
-<div class="status-number">
+<div class="stat-number">
 2026
 </div>
 
@@ -694,1027 +656,336 @@ CASE ARCHIVE SYSTEM
 </div>
 
 
-</section>
-
-
-
-
-
-
-<section class="search-box">
-
-
-<div class="search-title">
-案件檢索
 </div>
-
-
-
-<input class="search-input"
-placeholder="輸入案件編號、案件名稱、關聯人物">
-
-
-
-<div class="search-option">
-
-
-<select>
-
-<option>
-全部案件類型
-</option>
-
-<option>
-失蹤案件
-</option>
-
-<option>
-刑事案件
-</option>
-
-<option>
-證物調查
-</option>
-
-<option>
-資料異常事件
-</option>
-
-</select>
-
-
-
-<select>
-
-<option>
-全部案件狀態
-</option>
-
-<option>
-公開調查完成
-</option>
-
-<option>
-部分封存
-</option>
-
-<option>
-限制公開
-</option>
-
-<option>
-重新調查
-</option>
-
-</select>
-
-
-
-<button class="search-btn">
-
-搜尋
-
-</button>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<div class="case-list-title">
-
-案件檔案列表
-
-</div>
-
-
 
 
 
 <div class="case-table">
 
 
+<div class="table-header">
 
+<div>
+案件編號
+</div>
 
+<div>
+案件名稱
+</div>
 
+<div>
+案件類型
+</div>
 
-<!-- CASE 2014 -->
+<div>
+資料狀態
+</div>
 
+<div>
+檔案
+</div>
+
+</div>
 
 <div class="case-row">
-
-
-<div class="case-top">
-
 
 <div class="case-id">
 CASE-2014-0721
 </div>
 
-
-<div class="case-status">
-公開調查資料
-</div>
-
-
-</div>
-
-
-
 <div class="case-name">
 雨夜失蹤事件
 </div>
 
-
-
-<div class="case-data">
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-案件類型
-</div>
-
-<div class="data-content">
+<div class="case-type">
 失蹤案件
 </div>
 
+<div class="case-status">
+公開調查
 </div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-發生日期
-</div>
-
-<div class="data-content">
-2014 / 07 / 21
-</div>
-
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-關聯人物
-</div>
-
-<div class="data-content">
-許文哲
-</div>
-
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-資料狀態
-</div>
-
-<div class="data-content">
-公開
-</div>
-
-</div>
-
-
-
-</div>
-
-
 
 <div class="case-link">
 
 <a href="case0721.html">
 
 <button>
-查看案件檔案
+查看卷宗
 </button>
 
 </a>
 
 </div>
 
-
-
 </div>
 
 
 
 
 
-
-
-<!-- CASE 2015 -->
-
-
 <div class="case-row">
-
-
-<div class="case-top">
-
 
 <div class="case-id">
 CASE-2015-0314
 </div>
 
-
-<div class="case-status">
-資料外洩調查
-</div>
-
-
-</div>
-
-
-
 <div class="case-name">
 星瀚資料外洩事件
 </div>
 
-
-
-<div class="case-data">
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-案件類型
+<div class="case-type">
+資料事件
 </div>
 
-<div class="data-content">
-企業資料事件
-</div>
-
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-發生日期
-</div>
-
-<div class="data-content">
-2015 / 03 / 14
-</div>
-
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-關聯人物
-</div>
-
-<div class="data-content">
-林俊宇
-</div>
-
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-資料狀態
-</div>
-
-<div class="data-content">
+<div class="case-status">
 部分公開
 </div>
-
-</div>
-
-
-
-</div>
-
-
 
 <div class="case-link">
 
 <a href="case0314.html">
 
 <button>
-查看案件檔案
+查看卷宗
 </button>
 
 </a>
 
 </div>
 
-
-
 </div>
 
 
 
 
 
-
-
-
-<!-- CASE 2016-1123 -->
-
-
 <div class="case-row">
-
-
-<div class="case-top">
-
 
 <div class="case-id">
 CASE-2016-1123
 </div>
 
-
-<div class="case-status">
-證物調查
-</div>
-
-
-</div>
-
-
-
 <div class="case-name">
 白橋錄音事件
 </div>
 
-
-
-<div class="case-data">
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-案件類型
-</div>
-
-<div class="data-content">
+<div class="case-type">
 證物調查
 </div>
 
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-發生日期
-</div>
-
-<div class="data-content">
-2016 / 11 / 23
-</div>
-
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-關聯人物
-</div>
-
-<div class="data-content">
-林子安
-</div>
-
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-資料狀態
-</div>
-
-<div class="data-content">
+<div class="case-status">
 部分封存
 </div>
-
-</div>
-
-
-
-</div>
-
-
 
 <div class="case-link">
 
 <a href="case1123.html">
 
 <button>
-查看案件檔案
+查看卷宗
 </button>
 
 </a>
 
 </div>
 
-
-
 </div>
 
-<!-- CASE 2016-1211 -->
+
+
 
 
 <div class="case-row">
-
-
-<div class="case-top">
-
 
 <div class="case-id">
 CASE-2016-1211
 </div>
 
-
-<div class="case-status">
-民間證詞整理
-</div>
-
-
-</div>
-
-
-
 <div class="case-name">
 五峰別館夜訪事件
 </div>
 
-
-
-<div class="case-data">
-
-
-<div class="data-box">
-
-<div class="data-title">
-案件類型
-</div>
-
-<div class="data-content">
+<div class="case-type">
 人物調查
 </div>
 
+<div class="case-status">
+公開資料
 </div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-發生日期
-</div>
-
-<div class="data-content">
-2016 / 12 / 11
-</div>
-
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-關聯人物
-</div>
-
-<div class="data-content">
-方予澤
-</div>
-
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-資料狀態
-</div>
-
-<div class="data-content">
-公開
-</div>
-
-</div>
-
-
-</div>
-
-
 
 <div class="case-link">
 
 <a href="case1211.html">
 
 <button>
-查看案件檔案
+查看卷宗
 </button>
 
 </a>
 
 </div>
 
-
-
 </div>
 
 
 
 
 
-
-
-
-<!-- CASE 2017-0908 -->
-
-
 <div class="case-row">
-
-
-<div class="case-top">
-
 
 <div class="case-id">
 CASE-2017-0908
 </div>
 
-
-<div class="case-status">
-限制公開
-</div>
-
-
-</div>
-
-
-
 <div class="case-name">
 第十三號證物
 </div>
 
-
-
-<div class="case-data">
-
-
-<div class="data-box">
-
-<div class="data-title">
-案件類型
+<div class="case-type">
+特殊證物
 </div>
 
-<div class="data-content">
-特殊證物調查
-</div>
-
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-發生日期
-</div>
-
-<div class="data-content">
-2017 / 09 / 08
-</div>
-
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-關聯人物
-</div>
-
-<div class="data-content">
-沈曜文
-</div>
-
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-資料狀態
-</div>
-
-<div class="data-content">
+<div class="case-status">
 限制公開
 </div>
-
-</div>
-
-
-</div>
-
-
 
 <div class="case-link">
 
 <a href="case0908.html">
 
 <button>
-查看案件檔案
+查看卷宗
 </button>
 
 </a>
 
 </div>
 
-
-
 </div>
 
 
 
 
 
-
-
-
-<!-- CASE 2017-1119 -->
-
-
 <div class="case-row">
-
-
-<div class="case-top">
-
 
 <div class="case-id">
 CASE-2017-1119
 </div>
 
-
-<div class="case-status">
-系統資料調查
-</div>
-
-
-</div>
-
-
-
 <div class="case-name">
 霧港重整事件
 </div>
 
-
-
-<div class="case-data">
-
-
-<div class="data-box">
-
-<div class="data-title">
-案件類型
+<div class="case-type">
+資料重整
 </div>
 
-<div class="data-content">
-資料重整事件
-</div>
-
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-發生日期
-</div>
-
-<div class="data-content">
-2017 / 11 / 19
-</div>
-
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-關聯人物
-</div>
-
-<div class="data-content">
-周柏廷
-</div>
-
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-資料狀態
-</div>
-
-<div class="data-content">
+<div class="case-status">
 重新檢視
 </div>
-
-</div>
-
-
-</div>
-
-
 
 <div class="case-link">
 
 <a href="case1119.html">
 
 <button>
-查看案件檔案
+查看卷宗
 </button>
 
 </a>
 
 </div>
 
-
-
 </div>
 
 
 
 
 
-
-
-
-<!-- CASE 2018-0419 -->
-
-
 <div class="case-row">
-
-
-<div class="case-top">
-
 
 <div class="case-id">
 CASE-2018-0419
 </div>
 
-
-<div class="case-status">
-重大刑事案件
-</div>
-
-
-</div>
-
-
-
 <div class="case-name">
 山河公園命案
 </div>
 
-
-
-<div class="case-data">
-
-
-<div class="data-box">
-
-<div class="data-title">
-案件類型
+<div class="case-type">
+重大刑案
 </div>
 
-<div class="data-content">
-刑事案件
+<div class="case-status">
+公開完成
 </div>
-
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-發生日期
-</div>
-
-<div class="data-content">
-2018 / 04 / 19
-</div>
-
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-關聯人物
-</div>
-
-<div class="data-content">
-林子安 / 周柏廷
-</div>
-
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-資料狀態
-</div>
-
-<div class="data-content">
-公開調查完成
-</div>
-
-</div>
-
-
-</div>
-
-
 
 <div class="case-link">
 
 <a href="case0419.html">
 
 <button>
-查看案件檔案
+查看卷宗
 </button>
 
 </a>
 
 </div>
 
-
-
 </div>
 
-<!-- CASE 2018-0507 -->
+
+
 
 
 <div class="case-row">
-
-
-<div class="case-top">
-
 
 <div class="case-id">
 CASE-2018-0507
 </div>
 
-
-<div class="case-status">
-重新調查
-</div>
-
-
-</div>
-
-
-
 <div class="case-name">
 空橋洞坍塌事件
 </div>
 
-
-
-<div class="case-data">
-
-
-<div class="data-box">
-
-<div class="data-title">
-案件類型
-</div>
-
-<div class="data-content">
+<div class="case-type">
 事故調查
 </div>
 
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-發生日期
-</div>
-
-<div class="data-content">
-2018 / 05 / 07
-</div>
-
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-關聯人物
-</div>
-
-<div class="data-content">
-五名來源人物 / 沈曜文
-</div>
-
-</div>
-
-
-
-<div class="data-box">
-
-<div class="data-title">
-資料狀態
-</div>
-
-<div class="data-content">
+<div class="case-status">
 重新調查
 </div>
-
-</div>
-
-
-</div>
-
-
 
 <div class="case-link">
 
 <a href="case0507.html">
 
 <button>
-查看案件檔案
+查看卷宗
 </button>
 
 </a>
 
 </div>
 
+</div>
+
 
 
 </div>
 
 
 
+</main>
 
 
-
-
-</div>
 
 
 
 <footer>
 
-
 中央刑案公開資料庫 © 2026
-
 
 </footer>
 
