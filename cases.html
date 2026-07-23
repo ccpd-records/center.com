@@ -415,32 +415,32 @@ CENTRAL CRIMINAL DATABASE
 <main>
 
 
-<section class="page-title">
+<section class="search-panel">
 
 
-<h2>
-案件資料庫
-</h2>
+<div class="search-title">
+CASE SEARCH SYSTEM
+</div>
 
 
-<p>
+<div class="search-info">
 
-CASE ARCHIVE
+目前收錄案件：
+8 件
 
 <br><br>
 
-中央刑案公開資料庫收錄案件紀錄。
+資料範圍：
 
-<br>
+2014 - 2018
 
-以下案件依時間排序整理。
+<br><br>
 
-<br>
+檔案權限：
 
-部分案件仍存在未解資料異常。
+公開案件索引
 
-</p>
-
+</div>
 
 
 </section>
@@ -450,10 +450,137 @@ CASE ARCHIVE
 
 
 
+<section class="case-list">
 
 
 
-<section class="case-grid">
+<style>
+
+
+.case-list{
+
+border-top:1px solid #333;
+
+}
+
+
+
+.case-row{
+
+display:grid;
+
+grid-template-columns:180px 1fr 180px 160px;
+
+align-items:center;
+
+padding:25px 20px;
+
+border-bottom:1px solid #333;
+
+background:#0d0d0d;
+
+transition:.3s;
+
+}
+
+
+
+.case-row:hover{
+
+background:#160000;
+
+border-left:3px solid #900;
+
+}
+
+
+
+
+.case-id{
+
+color:#999;
+
+font-size:14px;
+
+letter-spacing:2px;
+
+}
+
+
+
+.case-name{
+
+font-size:23px;
+
+letter-spacing:4px;
+
+}
+
+
+
+.case-type{
+
+color:#aaa;
+
+font-size:14px;
+
+}
+
+
+
+.case-status{
+
+text-align:right;
+
+}
+
+
+
+.status-open{
+
+color:#ff6666;
+
+}
+
+
+
+.status-close{
+
+color:#888;
+
+}
+
+
+
+.view{
+
+display:inline-block;
+
+margin-top:8px;
+
+color:#ddd;
+
+border:1px solid #700;
+
+padding:5px 15px;
+
+font-size:13px;
+
+text-decoration:none;
+
+}
+
+
+
+.view:hover{
+
+background:#700;
+
+}
+
+
+
+</style>
 
 
 
@@ -462,14 +589,12 @@ CASE ARCHIVE
 
 
 
+<div class="case-row">
 
-<div class="case-card">
 
-
-<div class="case-number">
+<div class="case-id">
 CASE-2014-0721
 </div>
-
 
 
 <div class="case-name">
@@ -477,49 +602,22 @@ CASE-2014-0721
 </div>
 
 
-
-<div class="case-info">
-
-日期：
-
-2014 / 07 / 21
-
-<br><br>
-
-類型：
-
+<div class="case-type">
 失蹤案件
-
-<br><br>
-
-關聯：
-
-人物來源資料調查
-
-<br><br>
-
-簡介：
-
-一場留下大量生活痕跡，卻找不到完整人物去向的失蹤事件。
-
 </div>
 
 
+<div class="case-status">
 
-<div class="status">
+<div class="status-close">
 已封存
 </div>
 
-
-
-<br>
-
-
-
-<a class="button" href="case0721.html">
-查看案件
+<a class="view" href="case0721.html">
+查看
 </a>
 
+</div>
 
 
 </div>
@@ -531,14 +629,12 @@ CASE-2014-0721
 
 
 
+<div class="case-row">
 
-<div class="case-card">
 
-
-<div class="case-number">
+<div class="case-id">
 CASE-2015-0314
 </div>
-
 
 
 <div class="case-name">
@@ -546,49 +642,22 @@ CASE-2015-0314
 </div>
 
 
-
-<div class="case-info">
-
-日期：
-
-2015 / 03 / 14
-
-<br><br>
-
-類型：
-
-資料外洩事件
-
-<br><br>
-
-關聯：
-
-企業資料異常流向
-
-<br><br>
-
-簡介：
-
-企業內部資料遭異常整理，部分員工紀錄後續被重新調閱。
-
+<div class="case-type">
+資料異常事件
 </div>
 
 
+<div class="case-status">
 
-<div class="status">
+<div class="status-open">
 重新調查
 </div>
 
-
-
-<br>
-
-
-
-<a class="button" href="case0314.html">
-查看案件
+<a class="view" href="case0314.html">
+查看
 </a>
 
+</div>
 
 
 </div>
@@ -600,14 +669,12 @@ CASE-2015-0314
 
 
 
+<div class="case-row">
 
-<div class="case-card">
 
-
-<div class="case-number">
+<div class="case-id">
 CASE-2016-1123
 </div>
-
 
 
 <div class="case-name">
@@ -615,49 +682,22 @@ CASE-2016-1123
 </div>
 
 
-
-<div class="case-info">
-
-日期：
-
-2016 / 11 / 23
-
-<br><br>
-
-類型：
-
+<div class="case-type">
 證物調查
-
-<br><br>
-
-關聯：
-
-林子安調查紀錄
-
-<br><br>
-
-簡介：
-
-一段遺留錄音，揭開資料異常調查的起點。
-
 </div>
 
 
+<div class="case-status">
 
-<div class="status">
+<div class="status-open">
 重要證物
 </div>
 
-
-
-<br>
-
-
-
-<a class="button" href="case1123.html">
-查看案件
+<a class="view" href="case1123.html">
+查看
 </a>
 
+</div>
 
 
 </div>
@@ -669,14 +709,12 @@ CASE-2016-1123
 
 
 
+<div class="case-row">
 
-<div class="case-card">
 
-
-<div class="case-number">
+<div class="case-id">
 CASE-2016-1211
 </div>
-
 
 
 <div class="case-name">
@@ -684,49 +722,22 @@ CASE-2016-1211
 </div>
 
 
-
-<div class="case-info">
-
-日期：
-
-2016 / 12 / 11
-
-<br><br>
-
-類型：
-
-人物確認調查
-
-<br><br>
-
-關聯：
-
-周柏廷活動紀錄
-
-<br><br>
-
-簡介：
-
-民間證詞與官方資料產生矛盾的人物調查事件。
-
+<div class="case-type">
+人物調查
 </div>
 
 
+<div class="case-status">
 
-<div class="status">
+<div class="status-open">
 資料異常
 </div>
 
-
-
-<br>
-
-
-
-<a class="button" href="case1211.html">
-查看案件
+<a class="view" href="case1211.html">
+查看
 </a>
 
+</div>
 
 
 </div>
@@ -738,14 +749,12 @@ CASE-2016-1211
 
 
 
+<div class="case-row">
 
-<div class="case-card">
 
-
-<div class="case-number">
+<div class="case-id">
 CASE-2017-0908
 </div>
-
 
 
 <div class="case-name">
@@ -753,50 +762,25 @@ CASE-2017-0908
 </div>
 
 
-
-<div class="case-info">
-
-日期：
-
-2017 / 09 / 08
-
-<br><br>
-
-類型：
-
+<div class="case-type">
 封存證物調查
-
-<br><br>
-
-關聯：
-
-資料修正紀錄
-
-<br><br>
-
-簡介：
-
-一件證物的多次版本變更，引發資料流程調查。
-
 </div>
 
 
+<div class="case-status">
 
-<div class="status">
+<div class="status-open">
 覆核中
 </div>
 
 
-
-<br>
-
-
-
-<a class="button" href="case0908.html">
-查看案件
+<a class="view" href="case0908.html">
+查看
 </a>
 
 
+</div>
+
 
 </div>
 
@@ -807,13 +791,13 @@ CASE-2017-0908
 
 
 
-<div class="case-card">
+
+<div class="case-row">
 
 
-<div class="case-number">
+<div class="case-id">
 CASE-2017-1119
 </div>
-
 
 
 <div class="case-name">
@@ -821,50 +805,25 @@ CASE-2017-1119
 </div>
 
 
-
-<div class="case-info">
-
-日期：
-
-2017 / 11 / 19
-
-<br><br>
-
-類型：
-
+<div class="case-type">
 資料重整異常
-
-<br><br>
-
-關聯：
-
-周柏廷資料形成
-
-<br><br>
-
-簡介：
-
-大量資料重新分類後，一名人物檔案逐漸形成。
-
 </div>
 
 
+<div class="case-status">
 
-<div class="status">
+<div class="status-open">
 持續調查
 </div>
 
 
-
-<br>
-
-
-
-<a class="button" href="case1119.html">
-查看案件
+<a class="view" href="case1119.html">
+查看
 </a>
 
 
+</div>
+
 
 </div>
 
@@ -873,13 +832,15 @@ CASE-2017-1119
 
 
 
-<div class="case-card">
 
 
-<div class="case-number">
+
+<div class="case-row">
+
+
+<div class="case-id">
 CASE-2018-0419
 </div>
-
 
 
 <div class="case-name">
@@ -887,50 +848,25 @@ CASE-2018-0419
 </div>
 
 
-
-<div class="case-info">
-
-日期：
-
-2018 / 04 / 19
-
-<br><br>
-
-類型：
-
-刑事案件／死亡調查
-
-<br><br>
-
-關聯：
-
-林子安死亡事件
-
-<br><br>
-
-簡介：
-
-調查記者林子安於山河公園死亡，周柏廷被列為主要嫌疑人。
-
+<div class="case-type">
+刑事案件
 </div>
 
 
+<div class="case-status">
 
-<div class="status">
+<div class="status-open">
 重大案件
 </div>
 
 
-
-<br>
-
-
-
-<a class="button" href="case0419.html">
-查看案件
+<a class="view" href="case0419.html">
+查看
 </a>
 
 
+</div>
+
 
 </div>
 
@@ -942,13 +878,12 @@ CASE-2018-0419
 
 
 
-<div class="case-card">
+<div class="case-row">
 
 
-<div class="case-number">
+<div class="case-id">
 CASE-2018-0507
 </div>
-
 
 
 <div class="case-name">
@@ -956,50 +891,25 @@ CASE-2018-0507
 </div>
 
 
-
-<div class="case-info">
-
-日期：
-
-2018 / 05 / 07
-
-<br><br>
-
-類型：
-
-工程事故／資料回收
-
-<br><br>
-
-關聯：
-
-封存資料解封
-
-<br><br>
-
-簡介：
-
-事故清理過程中發現大量封存文件，重新揭開周柏廷身份來源。
-
+<div class="case-type">
+事故調查／資料回收
 </div>
 
 
+<div class="case-status">
 
-<div class="status">
-最高權限調查
+<div class="status-open">
+最高權限
 </div>
 
 
-
-<br>
-
-
-
-<a class="button" href="case0507.html">
-查看案件
+<a class="view" href="case0507.html">
+查看
 </a>
 
 
+</div>
+
 
 </div>
 
@@ -1019,34 +929,43 @@ CASE-2018-0507
 
 
 
-<section class="page-title">
+<section style="
+margin-top:45px;
+background:#111;
+border:1px solid #333;
+padding:30px;
+">
 
 
-<h2>
-案件關聯提示
-</h2>
+
+<div style="
+font-size:22px;
+letter-spacing:4px;
+border-left:3px solid #900;
+padding-left:15px;
+margin-bottom:20px;
+">
+
+資料庫備註
+
+</div>
 
 
 
-<p>
+<p style="
+line-height:2;
+color:#aaa;
+">
 
-部分案件之間存在交叉資料。
+本資料庫公開案件索引僅提供基本案件資訊。
 
 <br><br>
 
-單一案件無法完整還原事件。
+部分案件涉及跨案調查、封存資料及內部修正紀錄。
 
-<br>
+<br><br>
 
-建議依時間順序閱讀。
-
-</p>
-
-
-
-<p>
-
-※ 部分封存案件需完成其他資料檢核後開放。
+案件內容將依權限逐步開放。
 
 </p>
 
@@ -1059,18 +978,40 @@ CASE-2018-0507
 
 
 
+<footer style="
 
-<footer>
+margin-top:60px;
+
+background:#111;
+
+border-top:1px solid #333;
+
+padding:30px;
+
+text-align:center;
+
+color:#777;
+
+letter-spacing:3px;
+
+font-size:13px;
+
+">
+
 
 中央刑案公開資料庫 © 2026
 
+
 <br><br>
+
 
 CENTRAL CRIMINAL DATABASE
 
+
 <br><br>
 
-案件資料僅供調查研究使用
+
+案件資料索引系統
 
 </footer>
 
@@ -1080,8 +1021,6 @@ CENTRAL CRIMINAL DATABASE
 
 
 </main>
-
-
 
 
 
