@@ -4,63 +4,139 @@
 <head>
 
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>CASE-2018-0419｜山河公園命案｜中央刑案公開資料庫</title>
+
+<title>
+CASE-2018-0419｜山河公園命案｜中央刑案公開資料庫
+</title>
+
 
 <style>
 
-body{
-margin:0;
-background:#080808;
-color:#ddd;
-font-family:"Microsoft JhengHei",sans-serif;
+
+*{
+box-sizing:border-box;
 }
+
+
+body{
+
+margin:0;
+
+background:#080808;
+
+color:#dddddd;
+
+font-family:"Microsoft JhengHei",Arial,sans-serif;
+
+}
+
+
+
+/* =====================
+Header
+===================== */
 
 
 header{
 
 background:#160000;
-padding:35px 50px;
+
+padding:25px 45px;
+
 border-bottom:1px solid #800;
 
+display:flex;
+
+align-items:center;
+
 }
 
 
-.logo-title{
 
-font-size:36px;
+.logo{
+
+width:280px;
+
+height:280px;
+
+object-fit:contain;
+
+margin-right:15px;
+
+}
+
+
+
+.title-area{
+
+text-align:left;
+
+}
+
+
+
+h1{
+
+font-size:46px;
+
 letter-spacing:6px;
 
+margin:0;
+
+white-space:nowrap;
+
 }
+
 
 
 .subtitle{
 
-margin-top:10px;
+font-size:22px;
+
+letter-spacing:5px;
+
 color:#999;
-font-size:18px;
-letter-spacing:4px;
+
+margin-top:8px;
 
 }
+
+
+
+
+
+/* =====================
+Navigation
+===================== */
 
 
 nav{
 
 background:#111;
-padding:18px 50px;
+
+padding:15px 45px;
+
 border-bottom:1px solid #333;
 
 }
 
 
+
 nav a{
 
 color:#ddd;
+
 text-decoration:none;
+
 margin-right:35px;
 
+font-size:15px;
+
 }
+
 
 
 nav a:hover{
@@ -70,185 +146,289 @@ color:white;
 }
 
 
+
+
+/* =====================
+Main
+===================== */
+
+
 main{
 
-max-width:1200px;
-margin:auto;
-padding:45px;
+padding:35px 55px;
 
 }
 
 
-.box{
+
+/* =====================
+Case Header
+===================== */
+
+
+.case-banner{
 
 background:#111;
-border:1px solid #333;
+
+border:1px solid #800;
+
 padding:30px;
+
+margin-bottom:30px;
+
+}
+
+
+
+.case-id{
+
+font-size:14px;
+
+letter-spacing:3px;
+
+color:#999;
+
+}
+
+
+
+.case-title{
+
+font-size:38px;
+
+letter-spacing:6px;
+
+margin-top:15px;
+
+color:#fff;
+
+}
+
+
+
+.case-status{
+
+display:inline-block;
+
+margin-top:18px;
+
+padding:6px 18px;
+
+border:1px solid #900;
+
+color:#ff6666;
+
+font-size:13px;
+
+}
+
+
+
+/* =====================
+Information
+===================== */
+
+
+.info-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:15px;
+
 margin-bottom:35px;
 
 }
 
 
-.box h2{
 
-margin-top:0;
-letter-spacing:4px;
-color:#eee;
+.info-box{
 
-}
+background:#111;
 
+border:1px solid #333;
 
-
-.case-number{
-
-color:#888;
-letter-spacing:3px;
-
-}
-
-
-
-.grid{
-
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:20px;
-margin-top:25px;
-
-}
-
-
-.item{
-
-background:#0b0b0b;
-border:1px solid #222;
 padding:18px;
 
 }
 
 
-.item-title{
 
-font-size:13px;
+.info-title{
+
+font-size:12px;
+
 color:#888;
+
+margin-bottom:10px;
+
+}
+
+
+
+.info-content{
+
+font-size:15px;
+
+}
+
+
+
+
+
+/* =====================
+Section
+===================== */
+
+
+.section{
+
+background:#111;
+
+border:1px solid #333;
+
+padding:25px;
+
+margin-bottom:30px;
+
+}
+
+
+
+.section-title{
+
+font-size:22px;
+
+letter-spacing:4px;
+
+border-bottom:1px solid #333;
+
+padding-bottom:12px;
+
+margin-bottom:20px;
+
+}
+
+
+
+
+.section p{
+
+font-size:15px;
+
+line-height:1.9;
+
+}
+
+
+
+
+
+/* =====================
+Timeline
+===================== */
+
+
+.timeline-item{
+
+border-left:2px solid #800;
+
+padding-left:20px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.timeline-date{
+
+color:#ff6666;
+
+font-size:14px;
+
+}
+
+
+
+.timeline-text{
+
+margin-top:8px;
+
+line-height:1.8;
+
+}
+
+
+
+
+
+/* =====================
+Evidence
+===================== */
+
+
+.evidence{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:15px;
+
+}
+
+
+
+.evidence-box{
+
+background:#090909;
+
+border:1px solid #333;
+
+padding:15px;
+
+}
+
+
+
+.evidence-title{
+
+color:#ff6666;
+
+font-size:14px;
+
 margin-bottom:8px;
 
 }
 
 
 
-.timeline{
-
-border-left:2px solid #800;
-padding-left:25px;
-
-}
-
-
-.event{
-
-margin-bottom:25px;
-
-}
-
-
-.date{
-
-color:#a00000;
-font-weight:bold;
-
-}
-
-
-.evidence{
-
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
-
-}
-
-
-
-.card{
-
-background:#0b0b0b;
-border:1px solid #222;
-padding:20px;
-
-}
-
-
-.card:hover{
-
-border-color:#800;
-
-}
-
-
-.person{
-
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
-
-}
-
-
-
-.status{
-
-color:#900;
-font-weight:bold;
-
-}
-
-
-button{
-
-background:#650000;
-border:1px solid #a00000;
-color:white;
-padding:12px 30px;
-cursor:pointer;
-font-size:15px;
-
-}
-
-
-button:hover{
-
-background:#900;
-
-}
-
 
 
 footer{
 
 text-align:center;
+
 padding:25px;
-background:#111;
+
 border-top:1px solid #333;
+
+background:#111;
+
 color:#777;
 
-}
+font-size:14px;
 
-
-@media(max-width:800px){
-
-.grid,
-.evidence,
-.person{
-
-grid-template-columns:1fr;
+letter-spacing:2px;
 
 }
 
-}
 
 
 </style>
+
 
 </head>
 
@@ -258,13 +438,27 @@ grid-template-columns:1fr;
 
 <header>
 
-<div class="logo-title">
+
+<img class="logo"
+src="c1d92c77-13c3-45cb-8c4d-45a5bb32073c.png">
+
+
+
+<div class="title-area">
+
+
+<h1>
 中央刑案公開資料庫
-</div>
+</h1>
+
 
 <div class="subtitle">
-CASE FILE SYSTEM / PUBLIC RECORD
+CENTRAL CRIMINAL DATABASE
 </div>
+
+
+</div>
+
 
 </header>
 
@@ -272,13 +466,26 @@ CASE FILE SYSTEM / PUBLIC RECORD
 
 <nav>
 
-<a href="index.html">首頁</a>
 
-<a href="cases.html">案件資料庫</a>
+<a href="index.html">
+首頁
+</a>
 
-<a href="missing.html">懸案檔案</a>
 
-<a href="forum.html">調查論壇</a>
+<a href="cases.html">
+案件資料庫
+</a>
+
+
+<a href="missing.html">
+懸案檔案
+</a>
+
+
+<a href="https://ccpd-records.github.io/casewatch/">
+刑案觀察站
+</a>
+
 
 </nav>
 
@@ -286,92 +493,85 @@ CASE FILE SYSTEM / PUBLIC RECORD
 
 <main>
 
+<section class="case-banner">
 
 
-<div class="box">
-
-
-<div class="case-number">
+<div class="case-id">
 CASE-2018-0419
 </div>
 
 
-<h1>
+<div class="case-title">
 山河公園命案
-</h1>
-
-
-<p>
-2018年4月19日晚間，山河公園發生重大刑事案件。
-警方於現場發現一名死亡個體，後續調查公開唯一嫌疑人周柏廷相關資料。
-</p>
-
-
 </div>
 
 
+<div class="case-status">
+重大刑事案件｜公開調查完成
+</div>
 
 
-<div class="box">
+</section>
 
 
-<h2>
-案件基本資料
-</h2>
 
 
-<div class="grid">
 
 
-<div class="item">
+<div class="info-grid">
 
-<div class="item-title">
+
+<div class="info-box">
+
+<div class="info-title">
 案件類型
 </div>
 
-重大刑事案件
+<div class="info-content">
+刑事案件
+</div>
 
 </div>
 
 
 
-<div class="item">
+<div class="info-box">
 
-<div class="item-title">
+<div class="info-title">
 發生日期
 </div>
 
-2018/04/19
+<div class="info-content">
+2018 / 04 / 19
+</div>
 
 </div>
 
 
 
-<div class="item">
+<div class="info-box">
 
-<div class="item-title">
+<div class="info-title">
+案件地點
+</div>
+
+<div class="info-content">
+山河公園北側步道區
+</div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
 案件狀態
 </div>
 
-<span class="status">
-公開調查完成<br>
-（資料庫異常）
-</span>
-
+<div class="info-content">
+公開調查完成
 </div>
-
-
-
-<div class="item">
-
-<div class="item-title">
-主要嫌疑人
-</div>
-
-周柏廷
-
-</div>
-
 
 </div>
 
@@ -383,129 +583,77 @@ CASE-2018-0419
 
 
 
-<div class="box">
+<section class="section">
 
 
-<h2>
-調查時間線
-</h2>
-
-
-<div class="timeline">
-
-
-<div class="event">
-
-<div class="date">
-2018/04/19 21:14
-</div>
-
-民眾通報山河公園東側區域發現異常。
-
-</div>
-
-
-
-<div class="event">
-
-<div class="date">
-2018/04/19 22:03
-</div>
-
-警方抵達現場並封鎖調查。
-
-</div>
-
-
-
-<div class="event">
-
-<div class="date">
-2018/04/20
-</div>
-
-確認死者身份，開始進行相關人員調查。
-
-</div>
-
-
-
-<div class="event">
-
-<div class="date">
-2018/05/02
-</div>
-
-警方公布主要嫌疑人周柏廷資料。
-
-</div>
-
-
-
-<div class="event">
-
-<div class="date">
-2018/06/15
-</div>
-
-部分案件資料正式公開。
-
-</div>
-
-
-</div>
-
-
-</div>
-
-<div class="box">
-
-<h2>
-資料庫異常紀錄
-</h2>
-
-</div>
-  
-
-<div class="card">
-
-<div class="date">
-LOG-0419-A
+<div class="section-title">
+案件摘要
 </div>
 
 
 <p>
-系統於2026/07/03進行資料完整性檢查時，
-發現本案件存在版本差異。
+
+2018年4月19日，調查記者林子安於山河公園內被發現死亡。
+
 </p>
 
 
 <p>
-異常項目：
+
+警方初步調查認定現場存在人為衝突跡象，
+並於後續調查過程中公開相關證物紀錄、監視資料與人物關係。
+
 </p>
-
-
-<ul>
-
-<li>
-嫌疑人資料缺少原始建立紀錄
-</li>
-
-<li>
-部分身份驗證文件無法調閱
-</li>
-
-<li>
-案件卷宗曾存在修改紀錄
-</li>
-
-</ul>
 
 
 <p>
-備註：
-此異常不影響案件公開狀態。
+
+案件調查期間，
+周柏廷因與林子安過去調查方向存在交集，
+被列為重要關聯人物。
+
 </p>
+
+
+<p>
+
+本案涉及多份資料比對、
+證物來源確認以及中央資料庫內部紀錄異常問題。
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="section">
+
+
+<div class="section-title">
+案件時間軸
+</div>
+
+
+
+<div class="timeline-item">
+
+
+<div class="timeline-date">
+2018 / 04 / 19  19:42
+</div>
+
+
+<div class="timeline-text">
+
+林子安最後一次被確認出現在山河公園周邊。
+
+</div>
 
 
 </div>
@@ -514,92 +662,123 @@ LOG-0419-A
 
 
 
-<div class="box">
+<div class="timeline-item">
 
 
-<h2>
-證物紀錄
-</h2>
+<div class="timeline-date">
+2018 / 04 / 19  22:16
+</div>
+
+
+<div class="timeline-text">
+
+警方接獲通報，前往現場進行初步封鎖與採證。
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="timeline-item">
+
+
+<div class="timeline-date">
+2018 / 04 / 20
+</div>
+
+
+<div class="timeline-text">
+
+現場物證完成初步整理，
+包含私人筆記、資料袋及電子設備。
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="timeline-item">
+
+
+<div class="timeline-date">
+2018 / 04 / 27
+</div>
+
+
+<div class="timeline-text">
+
+警方公開部分調查資料，
+周柏廷相關紀錄首次進入案件視野。
+
+</div>
+
+
+</div>
+
+
+
+
+<div class="timeline-item">
+
+
+<div class="timeline-date">
+2018 / 05 / 03
+</div>
+
+
+<div class="timeline-text">
+
+調查人員發現部分資料版本存在差異，
+案件轉入補充比對程序。
+
+</div>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+<section class="section">
+
+
+<div class="section-title">
+關聯人物資料
+</div>
 
 
 
 <div class="evidence">
 
 
-<div class="card">
+<div class="evidence-box">
 
-<h3>
-E-001
-</h3>
-
-監視器影像
-
-<p>
-案發時間附近拍攝紀錄。
-</p>
-
+<div class="evidence-title">
+林子安
 </div>
 
 
+<div>
 
-<div class="card">
-
-<h3>
-E-002
-</h3>
-
-現場遺留物
-
-<p>
-於公園東側區域發現。
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<h3>
-E-003
-</h3>
-
-通話紀錄
-
-<p>
-相關人士通訊資料。
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>
-E-004
-</h3>
-
-案件補充資料（異常項目）
-
-
-<p>
-狀態：
-<span class="status">
-已刪除
-</span>
-</p>
-
-
-<p>
-原始紀錄：
-存在
-</p>
-
-
-<p>
-目前資料：
-不存在
-</p>
+調查記者。
+<br>
+案件主要受害者。
+<br>
+留下筆記、錄音與調查資料。
 
 </div>
 
@@ -609,52 +788,20 @@ E-004
 
 
 
+<div class="evidence-box">
 
-
-<div class="box">
-
-
-<h2>
-關係人物
-</h2>
-
-
-<div class="person">
-
-
-<div class="card">
-
-<h3>
-死者
-</h3>
-
-資料封存
-
-</div>
-
-
-<div class="card">
-
-<h3>
-嫌疑人
-</h3>
-
+<div class="evidence-title">
 周柏廷
-
 </div>
 
 
+<div>
 
-<div class="card">
-
-<h3>
-證人
-</h3>
-
-部分資料公開
-
-</div>
-
+案件重要關聯人物。
+<br>
+資料紀錄存在多處異常。
+<br>
+後續調查持續比對。
 
 </div>
 
@@ -664,28 +811,66 @@ E-004
 
 
 
+<div class="evidence-box">
+
+<div class="evidence-title">
+沈曜文
+</div>
+
+
+<div>
+
+中央系統相關人員。
+<br>
+曾出現在部分資料覆核紀錄。
+
+</div>
+
+
+</div>
 
 
 
-<div class="box">
+</div>
 
 
-<h2>
-公開文件
-</h2>
+
+</section>
+
+<section class="section">
 
 
-<div class="card">
+<div class="section-title">
+證物資料
+</div>
 
-📄 初步調查報告
+
+
+<div class="evidence">
+
+
+
+<div class="evidence-box">
+
+
+<div class="evidence-title">
+證物 A-01
+</div>
+
+
+<div>
+
+林子安私人筆記殘頁。
 
 <br><br>
 
-📄 現場勘查紀錄
+狀態：
+已公開部分內容
 
 <br><br>
 
-📄 證物分析報告
+備註：
+部分頁面存在缺失。
 
 </div>
 
@@ -696,38 +881,283 @@ E-004
 
 
 
-<div class="box">
+<div class="evidence-box">
 
 
-<h2>
-資料庫備註
-</h2>
+<div class="evidence-title">
+證物 A-02
+</div>
+
+
+<div>
+
+現場資料袋。
+
+<br><br>
+
+狀態：
+保管中
+
+<br><br>
+
+備註：
+內含案件相關文件影本。
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="evidence-box">
+
+
+<div class="evidence-title">
+證物 A-03
+</div>
+
+
+<div>
+
+監視影像紀錄。
+
+<br><br>
+
+狀態：
+部分公開
+
+<br><br>
+
+備註：
+部分時間段存在缺漏。
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="section">
+
+
+<div class="section-title">
+調查紀錄
+</div>
 
 
 <p>
 
-本案件資料依公開調查紀錄整理。
-部分資訊因涉及個人隱私及司法程序限制，已進行遮蔽處理。
+本案調查過程中，
+警方曾針對現場痕跡、人物關係及資料來源進行多次比對。
 
 </p>
+
+
+<p>
+
+公開資料顯示，
+部分文件版本與後續整理資料存在差異。
+
+</p>
+
+
+<p>
+
+中央刑案公開資料庫目前保存之版本，
+為案件公開調查完成後之整理紀錄。
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="section">
+
+
+<div class="section-title">
+文件公開狀態
+</div>
+
+
+<div class="evidence">
+
+
+
+<div class="evidence-box">
+
+
+<div class="evidence-title">
+公開文件
+</div>
+
+
+<div>
+
+✔ 案件基本資料
+
+<br>
+
+✔ 部分時間軸
+
+<br>
+
+✔ 部分證物列表
+
+</div>
 
 
 </div>
 
 
+
+
+
+<div class="evidence-box">
+
+
+<div class="evidence-title">
+限制文件
+</div>
+
+
+<div>
+
+△ 完整監視影像
+
+<br>
+
+△ 原始調查報告
+
+<br>
+
+△ 內部比對紀錄
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="evidence-box">
+
+
+<div class="evidence-title">
+備註
+</div>
+
+
+<div>
+
+部分資料仍需取得相關權限查閱。
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="section">
+
+
+<div class="section-title">
+資料庫備註
+</div>
+
+
+<p>
+
+本案件頁面為中央刑案公開資料庫整理版本。
+
+</p>
+
+
+<p>
+
+資料內容依公開文件、案件紀錄與相關調查資料彙整。
+
+</p>
+
+
+<p>
+
+部分資訊可能因後續調查或資料修正而更新。
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<div style="text-align:center;margin:40px 0;">
 
 
 <a href="cases.html">
 
+
 <button>
+
 返回案件資料庫
+
 </button>
+
 
 </a>
 
 
+</div>
+
+
 
 </main>
+
+
 
 
 
@@ -740,5 +1170,6 @@ E-004
 
 
 </body>
+
 
 </html>
