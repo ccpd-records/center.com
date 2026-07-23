@@ -17,7 +17,9 @@
 
 
 *{
+
 box-sizing:border-box;
+
 }
 
 
@@ -47,6 +49,8 @@ display:flex;
 
 align-items:center;
 
+justify-content:flex-start;
+
 }
 
 
@@ -69,6 +73,8 @@ margin-right:15px;
 
 text-align:left;
 
+margin-left:0;
+
 }
 
 
@@ -82,6 +88,8 @@ letter-spacing:6px;
 margin:0;
 
 white-space:nowrap;
+
+font-weight:bold;
 
 }
 
@@ -102,6 +110,7 @@ margin-top:8px;
 
 
 
+
 nav{
 
 background:#111;
@@ -111,6 +120,7 @@ padding:15px 45px;
 border-bottom:1px solid #333;
 
 }
+
 
 
 nav a{
@@ -124,6 +134,7 @@ margin-right:35px;
 font-size:15px;
 
 }
+
 
 
 nav a:hover{
@@ -140,6 +151,8 @@ main{
 padding:35px 55px;
 
 }
+
+
 
 
 
@@ -169,11 +182,73 @@ margin-top:0;
 
 
 
+
+
 .box p{
 
 font-size:15px;
 
 line-height:1.8;
+
+}
+
+
+
+
+.search-area{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:15px;
+
+margin-bottom:35px;
+
+}
+
+
+
+.search-box{
+
+background:#0b0b0b;
+
+border:1px solid #333;
+
+padding:15px;
+
+}
+
+
+
+.search-title{
+
+font-size:12px;
+
+color:#888;
+
+margin-bottom:8px;
+
+}
+
+
+
+.search-content{
+
+font-size:14px;
+
+}
+
+
+
+
+.case-section-title{
+
+font-size:26px;
+
+letter-spacing:5px;
+
+margin-bottom:25px;
 
 }
 
@@ -189,6 +264,9 @@ flex-direction:column;
 gap:18px;
 
 }
+
+
+
 
 
 
@@ -214,6 +292,8 @@ border-color:#800;
 
 
 
+
+
 .case-header{
 
 border-bottom:1px solid #333;
@@ -223,6 +303,7 @@ padding-bottom:12px;
 margin-bottom:15px;
 
 }
+
 
 
 
@@ -265,6 +346,10 @@ color:#ff6666;
 font-size:12px;
 
 }
+
+
+
+
 
 
 
@@ -312,6 +397,7 @@ font-size:14px;
 
 
 
+
 .case-summary{
 
 margin-top:15px;
@@ -323,6 +409,15 @@ line-height:1.6;
 color:#ccc;
 
 }
+
+
+
+.case-button{
+
+margin-top:15px;
+
+}
+
 
 
 
@@ -351,11 +446,15 @@ background:#900;
 }
 
 
+
 a{
 
 color:white;
 
 }
+
+
+
 
 
 footer{
@@ -377,12 +476,15 @@ letter-spacing:2px;
 }
 
 
+
 </style>
 
 </head>
 
 
+
 <body>
+
 
 
 <header>
@@ -409,7 +511,6 @@ CENTRAL CRIMINAL DATABASE
 
 
 </header>
-
 
 
 
@@ -445,22 +546,31 @@ CENTRAL CRIMINAL DATABASE
 <main>
 
 
+
+
+
 <div class="box">
 
 
 <h2>
-案件資料庫索引
+案件資料庫
 </h2>
 
 
 <p>
-本頁收錄中央刑案公開資料庫目前公開案件紀錄。
+中央刑案公開資料庫收錄重大刑事案件公開紀錄。
 </p>
 
 
 <p>
-案件依照發生時間、案件類型與公開程度分類，
-部分資料因調查權限限制仍未完全公開。
+本資料庫提供案件摘要、時間軸、人物資料、
+證物紀錄、司法文件與修正歷史查詢功能。
+</p>
+
+
+<p>
+部分案件因調查權限限制，
+僅開放指定閱讀等級。
 </p>
 
 
@@ -468,8 +578,66 @@ CENTRAL CRIMINAL DATABASE
 
 
 
-<div class="case-list">
 
+
+<div class="search-area">
+
+
+<div class="search-box">
+
+<div class="search-title">
+案件搜尋
+</div>
+
+<div class="search-content">
+依案件編號或名稱查詢
+</div>
+
+</div>
+
+
+
+<div class="search-box">
+
+<div class="search-title">
+案件分類
+</div>
+
+<div class="search-content">
+刑事案件／失蹤案件／特殊調查
+</div>
+
+</div>
+
+
+
+<div class="search-box">
+
+<div class="search-title">
+資料狀態
+</div>
+
+<div class="search-content">
+公開／封存／限制閱覽
+</div>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="case-section-title">
+
+案件檔案索引
+
+</div>
+
+
+<div class="case-list">
 
 <!-- CASE 2014-0721 -->
 
@@ -478,6 +646,7 @@ CENTRAL CRIMINAL DATABASE
 
 
 <div class="case-header">
+
 
 <div class="case-id">
 CASE-2014-0721
@@ -490,63 +659,81 @@ CASE-2014-0721
 
 
 <div class="case-tag">
-失蹤人口調查
+失蹤案件
 </div>
 
 
 </div>
+
 
 
 <div class="case-info">
 
 
 <div class="info-box">
+
 <div class="info-title">
-案件類型
-</div>
-<div class="info-content">
-失蹤案件
-</div>
+案件日期
 </div>
 
-
-<div class="info-box">
-<div class="info-title">
-發生日期
-</div>
 <div class="info-content">
 2014 / 07 / 21
 </div>
+
 </div>
+
 
 
 <div class="info-box">
+
 <div class="info-title">
 案件狀態
 </div>
+
 <div class="info-content">
 公開調查資料
 </div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
+閱讀權限等級
+</div>
+
+<div class="info-content">
+LEVEL 1
+</div>
+
 </div>
 
 
 </div>
+
+
 
 
 <div class="case-summary">
 
-高中生於雨夜失蹤。
-案件包含個人資料、家庭關係與失蹤人口調查紀錄。
+高中生雨夜失蹤案件。
+公開資料包含人物基本資料、家庭關係、
+失蹤紀錄與相關來源文件。
+
+本案件後續被列入身份資料交叉比對項目。
 
 </div>
 
 
-<div style="margin-top:15px;">
+
+<div class="case-button">
 
 <a href="case0721.html">
 
 <button>
-查看完整卷宗
+查看案件檔案
 </button>
 
 </a>
@@ -556,6 +743,14 @@ CASE-2014-0721
 
 </div>
 
+
+
+
+
+
+
+
+
 <!-- CASE 2016-1123 -->
 
 
@@ -563,6 +758,7 @@ CASE-2014-0721
 
 
 <div class="case-header">
+
 
 <div class="case-id">
 CASE-2016-1123
@@ -589,21 +785,7 @@ CASE-2016-1123
 <div class="info-box">
 
 <div class="info-title">
-案件類型
-</div>
-
-<div class="info-content">
-證物調查
-</div>
-
-</div>
-
-
-
-<div class="info-box">
-
-<div class="info-title">
-發生日期
+案件日期
 </div>
 
 <div class="info-content">
@@ -627,6 +809,20 @@ CASE-2016-1123
 </div>
 
 
+
+<div class="info-box">
+
+<div class="info-title">
+閱讀權限等級
+</div>
+
+<div class="info-content">
+LEVEL 2
+</div>
+
+</div>
+
+
 </div>
 
 
@@ -634,19 +830,22 @@ CASE-2016-1123
 
 <div class="case-summary">
 
-匿名錄音檔成為案件關鍵證物。
-案件涉及音檔分析、來源追查與文件比對。
+匿名錄音檔案成為案件核心證物。
+案件資料包含音檔分析紀錄、
+來源追查文件與版本修正紀錄。
+
+部分證物資料仍處於封存狀態。
 
 </div>
 
 
 
-<div style="margin-top:15px;">
+<div class="case-button">
 
 <a href="case1123.html">
 
 <button>
-查看完整卷宗
+查看案件檔案
 </button>
 
 </a>
@@ -663,6 +862,7 @@ CASE-2016-1123
 
 
 
+
 <!-- CASE 2017-0908 -->
 
 
@@ -670,6 +870,7 @@ CASE-2016-1123
 
 
 <div class="case-header">
+
 
 <div class="case-id">
 CASE-2017-0908
@@ -690,28 +891,13 @@ CASE-2017-0908
 
 
 
-
 <div class="case-info">
 
 
 <div class="info-box">
 
 <div class="info-title">
-案件類型
-</div>
-
-<div class="info-content">
-特殊證物
-</div>
-
-</div>
-
-
-
-<div class="info-box">
-
-<div class="info-title">
-發生日期
+案件日期
 </div>
 
 <div class="info-content">
@@ -735,6 +921,20 @@ CASE-2017-0908
 </div>
 
 
+
+<div class="info-box">
+
+<div class="info-title">
+閱讀權限等級
+</div>
+
+<div class="info-content">
+LEVEL 3
+</div>
+
+</div>
+
+
 </div>
 
 
@@ -742,19 +942,22 @@ CASE-2017-0908
 
 <div class="case-summary">
 
-封存特殊證物調查紀錄。
-部分資料因調查需求，目前限制公開。
+案件涉及特殊證物調查。
+公開卷宗僅保留部分資訊，
+其餘文件需取得更高權限後查閱。
+
+相關資料於後續案件中被再次引用。
 
 </div>
 
 
 
-<div style="margin-top:15px;">
+<div class="case-button">
 
 <a href="case0908.html">
 
 <button>
-查看完整卷宗
+查看案件檔案
 </button>
 
 </a>
@@ -780,6 +983,7 @@ CASE-2017-0908
 
 <div class="case-header">
 
+
 <div class="case-id">
 CASE-2018-0419
 </div>
@@ -799,28 +1003,13 @@ CASE-2018-0419
 
 
 
-
 <div class="case-info">
 
 
 <div class="info-box">
 
 <div class="info-title">
-案件類型
-</div>
-
-<div class="info-content">
-刑事案件
-</div>
-
-</div>
-
-
-
-<div class="info-box">
-
-<div class="info-title">
-發生日期
+案件日期
 </div>
 
 <div class="info-content">
@@ -844,6 +1033,20 @@ CASE-2018-0419
 </div>
 
 
+
+<div class="info-box">
+
+<div class="info-title">
+閱讀權限等級
+</div>
+
+<div class="info-content">
+LEVEL 4
+</div>
+
+</div>
+
+
 </div>
 
 
@@ -852,19 +1055,24 @@ CASE-2018-0419
 <div class="case-summary">
 
 調查記者林子安死亡案件。
-警方公開唯一嫌疑人周柏廷相關資料，
-案件包含證物紀錄、監視影像與證人資料。
+
+警方公開主要嫌疑人周柏廷資料，
+包含人物檔案、證物紀錄、監視影像、
+鑑識報告與司法文件。
+
+後續資料比對發現，
+嫌疑人身份存在異常紀錄。
 
 </div>
 
 
 
-<div style="margin-top:15px;">
+<div class="case-button">
 
 <a href="case0419.html">
 
 <button>
-查看完整卷宗
+查看案件檔案
 </button>
 
 </a>
@@ -881,14 +1089,14 @@ CASE-2018-0419
 
 
 
-
-<!-- CASE 2019-0725 -->
+<!-- CC-2019-0725 -->
 
 
 <div class="case-card">
 
 
 <div class="case-header">
+
 
 <div class="case-id">
 CC-2019-0725
@@ -909,28 +1117,13 @@ CC-2019-0725
 
 
 
-
 <div class="case-info">
 
 
 <div class="info-box">
 
 <div class="info-title">
-案件類型
-</div>
-
-<div class="info-content">
-身份資料異常事件
-</div>
-
-</div>
-
-
-
-<div class="info-box">
-
-<div class="info-title">
-發生日期
+案件日期
 </div>
 
 <div class="info-content">
@@ -948,7 +1141,21 @@ CC-2019-0725
 </div>
 
 <div class="info-content">
-調查中
+資料異常調查中
+</div>
+
+</div>
+
+
+
+<div class="info-box">
+
+<div class="info-title">
+閱讀權限等級
+</div>
+
+<div class="info-content">
+LEVEL 5
 </div>
 
 </div>
@@ -961,20 +1168,24 @@ CC-2019-0725
 
 <div class="case-summary">
 
-警方公開一名完整資料嫌疑人，
-但調查發現其身份紀錄存在大量異常。
-案件涉及人物資料、身份驗證與未知調查文件。
+警方公開一名具有完整人生紀錄的嫌疑人資料。
+
+然而經來源檢核後，
+發現該人物可能不存在於任何原始資料來源。
+
+案件涉及人物資料重整、
+來源比對與身份完整性驗證。
 
 </div>
 
 
 
-<div style="margin-top:15px;">
+<div class="case-button">
 
 <a href="case0725.html">
 
 <button>
-查看完整卷宗
+查看案件檔案
 </button>
 
 </a>
@@ -983,6 +1194,7 @@ CC-2019-0725
 
 
 </div>
+
 
 
 
